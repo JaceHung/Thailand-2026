@@ -17,8 +17,8 @@
     </ul>
 </div>
 
-<div class="timeline-item-transfer">
-    <div class="timeline-dot-transfer"></div>
+<div class="timeline-item-transfer border-l-2 border-slate-300 border-dashed">
+    <div class="timeline-dot-transfer border-slate-300"></div>
     <div class="text-slate-400 font-medium text-xs mb-1 tracking-wider font-mono">10:30 - 11:00</div>
     <h3 class="text-base font-semibold text-slate-500 mb-1">飯店 前往 真理聖殿</h3>
     <p class="text-slate-400 text-sm">包車車程約 30 分鐘。</p>
@@ -37,8 +37,8 @@
     </div>
 </div>
 
-<div class="timeline-item-transfer">
-    <div class="timeline-dot-transfer"></div>
+<div class="timeline-item-transfer border-l-2 border-slate-300 border-dashed">
+    <div class="timeline-dot-transfer border-slate-300"></div>
     <div class="text-slate-400 font-medium text-xs mb-1 tracking-wider font-mono">12:00 - 12:15</div>
     <h3 class="text-base font-semibold text-slate-500 mb-1">前往 咖啡廳</h3>
     <p class="text-slate-400 text-sm">交通轉移。</p>
@@ -53,36 +53,32 @@
     </ul>
 </div>
 
-<div class="timeline-item-transfer">
-    <div class="timeline-dot-transfer"></div>
+<div class="timeline-item-transfer border-l-2 border-slate-300 border-dashed">
+    <div class="timeline-dot-transfer border-slate-300"></div>
     <div class="text-slate-400 font-medium text-xs mb-1 tracking-wider font-mono">13:15 - 13:30</div>
     <h3 class="text-base font-semibold text-slate-500 mb-1">前往 泡泡浴 / 按摩店</h3>
     <p class="text-slate-400 text-sm">交通轉移，車程約 20 分鐘。</p>
 </div>
 
 <!-- 雙線行程區塊 (Day 2) -->
-<div class="bg-indigo-50/50 rounded-2xl border border-indigo-100 mb-6 overflow-hidden mt-4">
-    <div class="bg-indigo-100/80 px-4 py-3 border-b border-indigo-200 flex items-center">
-        <i class="fa-solid fa-code-branch text-indigo-600 mr-2 mt-0.5"></i>
-        <h3 class="font-bold text-indigo-900">13:30 - 16:15 雙線分流行程</h3>
+<div class="bg-slate-50/50 rounded-2xl border border-slate-100 mb-6 overflow-hidden mt-4">
+    <div class="bg-slate-100/80 px-4 py-3 border-b border-slate-200 flex items-center">
+        <i class="fa-solid fa-code-branch text-slate-600 mr-2 mt-0.5"></i>
+        <h3 class="font-bold text-slate-900">13:30 - 16:15 雙線分流行程</h3>
     </div>
     <div class="grid grid-cols-1 md:grid-cols-2 gap-0">
-        <div class="p-5 md:pr-6 md:border-r border-indigo-200 border-dashed">
-            <div class="inline-block bg-indigo-100 text-indigo-800 text-xs font-bold px-3 py-1 rounded mb-4">暗黑體驗組</div>
-            <div class="pt-2 h-full">
-                <div class="timeline-item border-l-2 border-transparent pb-0 h-full">
-                    <div class="timeline-dot"></div>
-                    <div class="text-amber-600 font-bold text-sm mb-1 tracking-wider font-mono">13:30 - 16:00</div>
-                    <h3 class="text-lg font-bold text-slate-800 mb-2">泰國暗黑泡泡浴</h3>
-                    <ul class="bullet-list text-slate-600 text-sm">
-                        <li>前往觀看選妃與見世面體驗，療程大約 1.5H。</li>
-                    </ul>
-                </div>
+        <!-- 左側：主線行程 (按摩) -->
+        <div class="p-5 md:pr-6 md:border-r border-slate-200 border-dashed bg-amber-50/30">
+            <div class="inline-flex items-center bg-amber-50/80 border border-amber-200/80 text-amber-700 text-xs font-bold px-3 py-1.5 rounded-md mb-5 shadow-sm">
+                <i class="fa-solid fa-star mr-1.5 text-amber-500"></i>主線行程
             </div>
-        </div>
-        <div class="p-5 md:pl-6 border-t md:border-t-0 border-indigo-200 border-dashed bg-white/50">
-            <div class="inline-block bg-emerald-100 text-emerald-800 text-xs font-bold px-3 py-1 rounded mb-4">精油按摩組</div>
-            <div class="pt-2 h-full">
+            <div class="pt-2">
+                <div class="timeline-item-transfer border-l-2 border-slate-300 border-dashed">
+                    <div class="timeline-dot-transfer border-slate-300"></div>
+                    <div class="text-slate-400 font-medium text-xs mb-1 tracking-wider font-mono">14:00 - 14:30</div>
+                    <h3 class="text-base font-semibold text-slate-500 mb-1">前往 按摩店</h3>
+                    <p class="text-slate-400 text-sm">交通轉移。</p>
+                </div>
                 <div class="timeline-item border-l-2 border-transparent pb-0 h-full">
                     <div class="timeline-dot bg-indigo-500"></div>
                     <div class="text-indigo-600 font-bold text-sm mb-1 tracking-wider font-mono">14:30 - 16:15</div>
@@ -94,20 +90,42 @@
                 </div>
             </div>
         </div>
+        <!-- 右側：特色體驗 (泡泡浴) -->
+        <div class="p-5 md:pl-6 border-t md:border-t-0 border-slate-200 border-dashed bg-white/50">
+            <div class="inline-flex items-center bg-rose-50/80 border border-rose-200/80 text-rose-700 text-xs font-bold px-3 py-1.5 rounded-md mb-5 shadow-sm">
+                <i class="fa-solid fa-user-tag mr-1.5 text-rose-500"></i>特色體驗
+            </div>
+            <div class="pt-2">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="text-amber-600 font-bold text-sm mb-1 tracking-wider font-mono">13:30 - 16:00</div>
+                    <h3 class="text-lg font-bold text-slate-800 mb-2">泰國暗黑泡泡浴</h3>
+                    <ul class="bullet-list text-slate-600 text-sm">
+                        <li>前往觀看選妃與見世面體驗，療程大約 1.5H。</li>
+                    </ul>
+                </div>
+                <div class="timeline-item-transfer border-l-2 border-slate-300 border-dashed pb-0">
+                    <div class="timeline-dot-transfer border-slate-300"></div>
+                    <div class="text-slate-400 font-medium text-xs mb-1 tracking-wider font-mono">16:00 - 16:15</div>
+                    <h3 class="text-base font-semibold text-slate-500 mb-1">前往 會合地點</h3>
+                    <p class="text-slate-400 text-sm">交通轉移。</p>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="bg-indigo-50 px-5 py-4 border-t border-indigo-100 flex items-start">
-        <div class="bg-indigo-500 text-white rounded-full w-6 h-6 flex items-center justify-center shrink-0 mr-3 mt-0.5 text-xs">
+    <div class="bg-slate-100/50 px-5 py-4 border-t border-slate-200 flex items-start">
+        <div class="bg-slate-500 text-white rounded-full w-6 h-6 flex items-center justify-center shrink-0 mr-3 mt-0.5 text-xs shadow-sm">
             <i class="fa-solid fa-bullhorn"></i>
         </div>
         <div>
-            <h4 class="font-bold text-indigo-800 text-sm">接駁會合提醒</h4>
-            <p class="text-sm text-indigo-700 mt-1">司機載按摩組過去後，會再折回去接大蝦 (原泡泡浴組) 過來與大家會合。</p>
+            <h4 class="font-bold text-slate-800 text-sm">接駁會合提醒</h4>
+            <p class="text-sm text-slate-600 mt-1">司機送達按摩組後，將返回接應泡泡浴組成員會合。</p>
         </div>
     </div>
 </div>
 
-<div class="timeline-item-transfer">
-    <div class="timeline-dot-transfer"></div>
+<div class="timeline-item-transfer border-l-2 border-slate-300 border-dashed">
+    <div class="timeline-dot-transfer border-slate-300"></div>
     <div class="text-slate-400 font-medium text-xs mb-1 tracking-wider font-mono">16:15 - 16:30</div>
     <h3 class="text-base font-semibold text-slate-500 mb-1">前往 The Sky Gallery</h3>
     <p class="text-slate-400 text-sm">車程約 15 分鐘。</p>
@@ -124,8 +142,8 @@
     </ul>
 </div>
 
-<div class="timeline-item-transfer">
-    <div class="timeline-dot-transfer"></div>
+<div class="timeline-item-transfer border-l-2 border-slate-300 border-dashed">
+    <div class="timeline-dot-transfer border-slate-300"></div>
     <div class="text-slate-400 font-medium text-xs mb-1 tracking-wider font-mono">18:30 - 19:00</div>
     <h3 class="text-base font-semibold text-slate-500 mb-1">前往 6996 秀場</h3>
     <p class="text-slate-400 text-sm">車程約 30 分鐘。</p>
@@ -144,8 +162,8 @@
     </div>
 </div>
 
-<div class="timeline-item-transfer">
-    <div class="timeline-dot-transfer"></div>
+<div class="timeline-item-transfer border-l-2 border-slate-300 border-dashed">
+    <div class="timeline-dot-transfer border-slate-300"></div>
     <div class="text-slate-400 font-medium text-xs mb-1 tracking-wider font-mono">20:15 - 22:30</div>
     <h3 class="text-base font-semibold text-slate-500 mb-1">芭達亞 前往 曼谷</h3>
     <p class="text-slate-400 text-sm">行程結束後，乘包車驅車前往曼谷市區 (車程 2H)，預計 22:30 前抵達。</p>
