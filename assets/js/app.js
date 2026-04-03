@@ -103,6 +103,16 @@ function toggleCharterDetails() {
 }
 window.toggleCharterDetails = toggleCharterDetails;
 
+/**
+ * 從總覽跳轉至特定天數的行程
+ * @param {number} dayNum 
+ */
+function navigateToDay(dayNum) {
+    localStorage.setItem('selectedDay', dayNum);
+    switchMainTab('itinerary');
+}
+window.navigateToDay = navigateToDay;
+
 window.addEventListener('hashchange', () => {
     const tab = window.location.hash.replace('#', '') || 'overview';
     switchMainTab(tab);

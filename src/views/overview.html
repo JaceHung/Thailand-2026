@@ -5,134 +5,228 @@
     <title>行程總覽模組</title>
 </head>
 <body>
-<div class="bg-white rounded-2xl shadow-sm p-6 md:p-8 mb-6 border border-slate-100">
-    <h2 class="text-2xl font-bold text-indigo-900 border-l-4 border-amber-500 pl-3 mb-4">✨ 漫遊泰境：行程特色與規劃願景</h2>
-    <p class="text-slate-700 leading-relaxed mb-6 text-lg">
+    <div class="mb-8 border-b pb-6 border-slate-100">
+        <div class="text-amber-600 font-bold text-base tracking-[0.2em] font-mono uppercase mb-2 flex items-center">
+            <span class="w-8 h-[2px] bg-amber-400 mr-3 animate-pulse"></span>
+            Thailand Expedition — 2026
+        </div>
+        <h2 class="text-3xl font-black text-indigo-900 tracking-tight flex items-center">
+            <i class="fa-solid fa-earth-asia text-amber-500 mr-3 text-2xl"></i>
+            漫遊泰境：行程特色與規劃願景
+        </h2>
+    </div>
+
+    <p class="text-slate-600 leading-relaxed mb-10 text-lg border-l-4 border-amber-200 pl-6 italic">
         準備好開啟一場交織傳統古韻與現代潮魅的極致探索了嗎？<br><br>
-        此行深度融合「<span class="bg-indigo-100 text-indigo-800 px-1.5 py-0.5 rounded font-medium text-sm mx-0.5">海島派對</span>、<span class="bg-emerald-100 text-emerald-800 px-1.5 py-0.5 rounded font-medium text-sm mx-0.5">古蹟探秘</span>、<span class="bg-amber-100 text-amber-800 px-1.5 py-0.5 rounded font-medium text-sm mx-0.5">一生必看萬人天燈</span>」三大核心體驗。我們將從芭達亞的微醺海風與震撼夜色啟程，穿越大城古蹟與長頸鹿進行最萌互動；在曼谷化身泰國貴族，拍出定格瞬間的雜誌級大片；最後飛抵清邁，走進山林與象共舞，並親見萬盞天燈冉冉升空的奇蹟瞬間
+        此行深度融合「<span class="text-indigo-700 font-bold border-b-2 border-indigo-100 pb-0.5">海島派對</span>、<span class="text-emerald-600 font-bold border-b-2 border-emerald-100 pb-0.5">古蹟探秘</span>、<span class="text-amber-600 font-bold border-b-2 border-amber-100 pb-0.5">一生必看萬人天燈</span>」三大核心體驗。我們將從芭達亞的微醺海風與震撼夜色啟程，穿越大城古蹟與長頸鹿進行最萌互動；在曼谷化身泰國貴族，拍出定格瞬間的雜誌級大片；最後飛抵清邁，走進山林與象共舞，並親見萬盞天燈冉冉升空的奇蹟瞬間
     </p>
 
     <!-- Quick Itinerary Summary -->
-    <div class="bg-slate-50 rounded-2xl p-5 md:p-6 border border-slate-200 mb-8">
-        <h3 class="text-lg font-bold text-indigo-900 mb-4 flex items-center"><i class="fa-regular fa-calendar-check text-amber-500 mr-2 text-xl"></i> 9天8夜 快速日程表</h3>
-        <div class="grid grid-cols-1 md:grid-flow-col md:grid-rows-5 gap-x-6 gap-y-3 text-sm md:text-base text-slate-700">
-            <div class="flex items-start"><span class="text-highlight-amber">Day 1</span> <span>✈️ 閃耀啟程：抵達曼谷奔向芭達亞不夜城巡禮</span></div>
-            <div class="flex items-start"><span class="text-highlight-amber">Day 2</span> <span>🏺 暹羅匠心：木雕聖殿洗禮 ➔ 芭達亞震撼大秀 ➔ 曼谷</span></div>
-            <div class="flex items-start"><span class="text-highlight-amber">Day 3</span> <span>🦒 大城風華：長頸鹿吉普車互動 ➔ 世界遺產古蹟尋跡</span></div>
-            <div class="flex items-start"><span class="text-highlight-amber">Day 4</span> <span>🐘 曼谷潮魅：粉紅象神祈福 ➔ 鄭王廟泰服絕美盛演</span></div>
-            <div class="flex items-start"><span class="text-highlight-amber">Day 5</span> <span>🏮 雲端漫遊：飛抵清邁 ➔ CAD 萬人天燈節年度盛會</span></div>
-            <div class="flex items-start"><span class="text-highlight-amber">Day 6</span> <span>⛰️ 清邁古韻：雙龍寺祈福 ➔ 奢華 Villa 秘境慢活</span></div>
-            <div class="flex items-start"><span class="text-highlight-amber">Day 7</span> <span>🐘 森呼吸：湖畔探索巨大金剛 ➔ 大象咖啡廳親密互動</span></div>
-            <div class="flex items-start"><span class="text-highlight-amber">Day 8</span> <span>💆‍♀️ 清邁趣遊：萌寵樂園小豬互動 ➔ 雞籠 SPA ➔ 飛回曼谷</span></div>
-            <div class="flex items-start"><span class="text-highlight-amber">Day 9</span> <span>🛤️ 泰味尾聲：傳統水上市場 ➔ 鐵道震撼奇觀 ➔ 賦歸</span></div>
+    <!-- Quick Itinerary Summary: Split Layout Dashboard -->
+    <div class="bg-white rounded-3xl border border-slate-100 shadow-xl shadow-slate-200/40 mb-12 overflow-hidden">
+        <div class="md:grid md:grid-cols-[1fr_260px] divide-y md:divide-y-0 md:divide-x divide-slate-100">
+            <!-- Left: Quick Links -->
+            <div class="p-6 md:p-8">
+                <div class="mb-6 border-b pb-4">
+                    <div class="text-amber-600 font-bold text-sm tracking-widest font-mono uppercase mb-1.5 leading-none">Chronological Guide</div>
+                    <h3 class="text-xl font-black text-indigo-900 tracking-tight flex items-center">
+                        <i class="fa-regular fa-calendar-check text-amber-500 mr-2 text-lg"></i> 9天8夜 巡禮脈絡
+                    </h3>
+                </div>
+                
+                <div class="flex flex-col space-y-1">
+                    <!-- Day 1 -->
+                    <div onclick="navigateToDay(1)" class="group flex items-center p-3 rounded-xl hover:bg-amber-50/50 transition-all cursor-pointer border border-transparent hover:border-amber-100">
+                        <span class="w-14 shrink-0 text-amber-600 font-mono font-black text-xs tracking-tighter bg-amber-50 px-2 py-1 rounded-md text-center mr-4 group-hover:bg-amber-100 transition-colors border border-amber-100/50 text-nowrap">DAY 1</span>
+                        <span class="text-slate-700 font-medium group-hover:text-indigo-950 transition-colors truncate">✈️ 閃耀啟程：抵達曼谷奔向芭達亞不夜城巡禮</span>
+                        <i class="fa-solid fa-chevron-right ml-auto text-[10px] text-slate-300 opacity-0 group-hover:opacity-100 group-hover:translate-x-1 transition-all"></i>
+                    </div>
+                    <!-- Day 2 -->
+                    <div onclick="navigateToDay(2)" class="group flex items-center p-3 rounded-xl hover:bg-amber-50/50 transition-all cursor-pointer border border-transparent hover:border-amber-100">
+                        <span class="w-14 shrink-0 text-amber-600 font-mono font-black text-xs tracking-tighter bg-amber-50 px-2 py-1 rounded-md text-center mr-4 group-hover:bg-amber-100 transition-colors border border-amber-100/50 text-nowrap">DAY 2</span>
+                        <span class="text-slate-700 font-medium group-hover:text-indigo-950 transition-colors truncate">🏺 暹羅匠心：木雕聖殿洗禮 ➔ 芭達亞震撼大秀 ➔ 曼谷</span>
+                        <i class="fa-solid fa-chevron-right ml-auto text-[10px] text-slate-300 opacity-0 group-hover:opacity-100 group-hover:translate-x-1 transition-all"></i>
+                    </div>
+                    <!-- Day 3 -->
+                    <div onclick="navigateToDay(3)" class="group flex items-center p-3 rounded-xl hover:bg-amber-50/50 transition-all cursor-pointer border border-transparent hover:border-amber-100">
+                        <span class="w-14 shrink-0 text-amber-600 font-mono font-black text-xs tracking-tighter bg-amber-50 px-2 py-1 rounded-md text-center mr-4 group-hover:bg-amber-100 transition-colors border border-amber-100/50 text-nowrap">DAY 3</span>
+                        <span class="text-slate-700 font-medium group-hover:text-indigo-950 transition-colors truncate">🦒 大城風華：長頸鹿吉普車互動 ➔ 世界遺產古蹟尋跡</span>
+                        <i class="fa-solid fa-chevron-right ml-auto text-[10px] text-slate-300 opacity-0 group-hover:opacity-100 group-hover:translate-x-1 transition-all"></i>
+                    </div>
+                    <!-- Day 4 -->
+                    <div onclick="navigateToDay(4)" class="group flex items-center p-3 rounded-xl hover:bg-amber-50/50 transition-all cursor-pointer border border-transparent hover:border-amber-100">
+                        <span class="w-14 shrink-0 text-amber-600 font-mono font-black text-xs tracking-tighter bg-amber-50 px-2 py-1 rounded-md text-center mr-4 group-hover:bg-amber-100 transition-colors border border-amber-100/50 text-nowrap">DAY 4</span>
+                        <span class="text-slate-700 font-medium group-hover:text-indigo-950 transition-colors truncate">🐘 曼谷潮魅：粉紅象神祈福 ➔ 鄭王廟泰服絕美盛演</span>
+                        <i class="fa-solid fa-chevron-right ml-auto text-[10px] text-slate-300 opacity-0 group-hover:opacity-100 group-hover:translate-x-1 transition-all"></i>
+                    </div>
+                    <!-- Day 5 -->
+                    <div onclick="navigateToDay(5)" class="group flex items-center p-3 rounded-xl hover:bg-amber-50/50 transition-all cursor-pointer border border-transparent hover:border-amber-100">
+                        <span class="w-14 shrink-0 text-amber-600 font-mono font-black text-xs tracking-tighter bg-amber-50 px-2 py-1 rounded-md text-center mr-4 group-hover:bg-amber-100 transition-colors border border-amber-100/50 text-nowrap">DAY 5</span>
+                        <span class="text-slate-700 font-medium group-hover:text-indigo-950 transition-colors truncate">🏮 雲端漫遊：飛抵清邁 ➔ CAD 萬人天燈節年度盛會</span>
+                        <i class="fa-solid fa-chevron-right ml-auto text-[10px] text-slate-300 opacity-0 group-hover:opacity-100 group-hover:translate-x-1 transition-all"></i>
+                    </div>
+                    <!-- Day 6 -->
+                    <div onclick="navigateToDay(6)" class="group flex items-center p-3 rounded-xl hover:bg-amber-50/50 transition-all cursor-pointer border border-transparent hover:border-amber-100">
+                        <span class="w-14 shrink-0 text-amber-600 font-mono font-black text-xs tracking-tighter bg-amber-50 px-2 py-1 rounded-md text-center mr-4 group-hover:bg-amber-100 transition-colors border border-amber-100/50 text-nowrap">DAY 6</span>
+                        <span class="text-slate-700 font-medium group-hover:text-indigo-950 transition-colors truncate">⛰️ 清邁古韻：雙龍寺祈福 ➔ 奢華 Villa 秘境慢活</span>
+                        <i class="fa-solid fa-chevron-right ml-auto text-[10px] text-slate-300 opacity-0 group-hover:opacity-100 group-hover:translate-x-1 transition-all"></i>
+                    </div>
+                    <!-- Day 7 -->
+                    <div onclick="navigateToDay(7)" class="group flex items-center p-3 rounded-xl hover:bg-amber-50/50 transition-all cursor-pointer border border-transparent hover:border-amber-100">
+                        <span class="w-14 shrink-0 text-amber-600 font-mono font-black text-xs tracking-tighter bg-amber-50 px-2 py-1 rounded-md text-center mr-4 group-hover:bg-amber-100 transition-colors border border-amber-100/50 text-nowrap">DAY 7</span>
+                        <span class="text-slate-700 font-medium group-hover:text-indigo-950 transition-colors truncate">🐘 森呼吸：湖畔探索巨大金剛 ➔ 大象咖啡廳親密互動</span>
+                        <i class="fa-solid fa-chevron-right ml-auto text-[10px] text-slate-300 opacity-0 group-hover:opacity-100 group-hover:translate-x-1 transition-all"></i>
+                    </div>
+                    <!-- Day 8 -->
+                    <div onclick="navigateToDay(8)" class="group flex items-center p-3 rounded-xl hover:bg-amber-50/50 transition-all cursor-pointer border border-transparent hover:border-amber-100">
+                        <span class="w-14 shrink-0 text-amber-600 font-mono font-black text-xs tracking-tighter bg-amber-50 px-2 py-1 rounded-md text-center mr-4 group-hover:bg-amber-100 transition-colors border border-amber-100/50 text-nowrap">DAY 8</span>
+                        <span class="text-slate-700 font-medium group-hover:text-indigo-950 transition-colors truncate">💆‍♀️ 清邁趣遊：萌寵樂園小豬互動 ➔ 雞籠 SPA ➔ 飛回曼谷</span>
+                        <i class="fa-solid fa-chevron-right ml-auto text-[10px] text-slate-300 opacity-0 group-hover:opacity-100 group-hover:translate-x-1 transition-all"></i>
+                    </div>
+                    <!-- Day 9 -->
+                    <div onclick="navigateToDay(9)" class="group flex items-center p-3 rounded-xl hover:bg-amber-50/50 transition-all cursor-pointer border border-transparent hover:border-amber-100">
+                        <span class="w-14 shrink-0 text-amber-600 font-mono font-black text-xs tracking-tighter bg-amber-50 px-2 py-1 rounded-md text-center mr-4 group-hover:bg-amber-100 transition-colors border border-amber-100/50 text-nowrap">DAY 9</span>
+                        <span class="text-slate-700 font-medium group-hover:text-indigo-950 transition-colors truncate">🛤️ 泰味尾聲：傳統水上市場 ➔ 鐵道震撼奇觀 ➔ 賦歸</span>
+                        <i class="fa-solid fa-chevron-right ml-auto text-[10px] text-slate-300 opacity-0 group-hover:opacity-100 group-hover:translate-x-1 transition-all"></i>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right: Journey Stats Summary -->
+            <div class="p-6 md:p-8 bg-amber-50/30 flex flex-col justify-center space-y-8">
+                <div class="text-center md:text-left">
+                    <div class="text-[10px] font-bold text-amber-700 tracking-widest uppercase mb-1 drop-shadow-sm">Total Duration</div>
+                    <div class="text-3xl font-black text-indigo-900 tracking-tighter">9 Days</div>
+                    <div class="text-[11px] text-amber-600 font-bold tracking-tight italic">8 Nights Adventure</div>
+                </div>
+                <div class="text-center md:text-left">
+                    <div class="text-[10px] font-bold text-indigo-400 tracking-widest uppercase mb-1">Exploration</div>
+                    <div class="text-3xl font-black text-indigo-900 tracking-tighter">4 Cities</div>
+                    <div class="text-[11px] text-slate-500 font-medium tracking-tight whitespace-nowrap">BKK ➜ PTY ➜ AYT ➜ CNX</div>
+                </div>
+                <div class="text-center md:text-left">
+                    <div class="text-[10px] font-bold text-rose-400 tracking-widest uppercase mb-1">Experience</div>
+                    <div class="text-3xl font-black text-amber-600 tracking-tighter">12+ Spots</div>
+                    <div class="text-[11px] text-amber-500/80 font-bold tracking-tight">Deep Discovery</div>
+                </div>
+            </div>
         </div>
     </div>
     
-    <h3 class="text-lg font-bold text-indigo-900 mb-4 flex items-center"><i class="fa-solid fa-star text-amber-500 mr-2"></i> 旅程核心亮點</h3>
+    <div class="mb-6 border-b pb-4 mt-12">
+        <div class="text-amber-600 font-bold text-sm tracking-widest font-mono uppercase mb-1.5">Signature Experience</div>
+        <h3 class="text-xl font-black text-indigo-900 tracking-tight flex items-center">
+            <i class="fa-solid fa-star text-amber-500 mr-2 text-lg"></i> 旅程核心亮點
+        </h3>
+    </div>
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-        <div class="bg-amber-50 rounded-xl p-4 border border-amber-100 flex items-start hover:shadow-md transition-shadow">
-            <div class="bg-amber-100 text-amber-600 w-12 h-12 rounded-full flex items-center justify-center text-xl shrink-0 mr-4">
+        <div class="bg-amber-50 rounded-xl p-4 border border-amber-100 flex items-start hover:shadow-md transition-shadow group">
+            <div class="bg-amber-100 text-amber-600 w-12 h-12 rounded-full flex items-center justify-center text-xl shrink-0 mr-4 group-hover:bg-amber-600 group-hover:text-white transition-colors">
                 <i class="fa-solid fa-fire-flame-simple"></i>
             </div>
             <div>
-                <h4 class="font-bold text-slate-800">一期一會：萬人天燈</h4>
-                <p class="text-sm text-slate-600 mt-1">深度參與一年一度最震撼的清邁 CAD 天燈盛會，見證萬盞心願同時升空的永恆瞬間</p>
+                <h4 class="font-bold text-indigo-900">一期一會：萬人天燈</h4>
+                <p class="text-sm text-slate-600 mt-1 leading-snug">深度參與一年一度最震撼的清邁 CAD 天燈盛會，見證萬盞心願同時升空的永恆瞬間</p>
             </div>
         </div>
-        <div class="bg-indigo-50 rounded-xl p-4 border border-indigo-100 flex items-start hover:shadow-md transition-shadow">
-            <div class="bg-indigo-100 text-indigo-600 w-12 h-12 rounded-full flex items-center justify-center text-xl shrink-0 mr-4">
+        <div class="bg-indigo-50/50 rounded-xl p-4 border border-indigo-100 flex items-start hover:shadow-md transition-shadow group">
+            <div class="bg-indigo-100 text-indigo-600 w-12 h-12 rounded-full flex items-center justify-center text-xl shrink-0 mr-4 group-hover:bg-indigo-600 group-hover:text-white transition-colors">
                 <i class="fa-solid fa-camera-retro"></i>
             </div>
             <div>
-                <h4 class="font-bold text-slate-800">曼谷泰服攝影</h4>
-                <p class="text-sm text-slate-600 mt-1">由專屬攝影師優雅跟拍，在純白色的鄭王廟塔群拍出極致華麗的雜誌級大片</p>
+                <h4 class="font-bold text-indigo-900">曼谷泰服攝影</h4>
+                <p class="text-sm text-slate-600 mt-1 leading-snug">由專屬攝影師優雅跟拍，在純白色的鄭王廟塔群拍出極致華麗的雜誌級大片</p>
             </div>
         </div>
-        <div class="bg-emerald-50 rounded-xl p-4 border border-emerald-100 flex items-start hover:shadow-md transition-shadow">
-            <div class="bg-emerald-100 text-emerald-600 w-12 h-12 rounded-full flex items-center justify-center text-xl shrink-0 mr-4">
+        <div class="bg-emerald-50/50 rounded-xl p-4 border border-emerald-100 flex items-start hover:shadow-md transition-shadow group">
+            <div class="bg-emerald-100 text-emerald-600 w-12 h-12 rounded-full flex items-center justify-center text-xl shrink-0 mr-4 group-hover:bg-emerald-600 group-hover:text-white transition-colors">
                 <i class="fa-solid fa-truck-pickup"></i>
             </div>
             <div>
-                <h4 class="font-bold text-slate-800">野生長頸鹿零距離</h4>
-                <p class="text-sm text-slate-600 mt-1">馳騁在大城野生動物園中，搭乘客製化斑馬吉普車，與長頸鹿進行視覺震撼的超近距離合影</p>
+                <h4 class="font-bold text-indigo-900">野生長頸鹿零距離</h4>
+                <p class="text-sm text-slate-600 mt-1 leading-snug">馳騁在大城野生動物園中，搭乘客製化斑馬吉普車，與長頸鹿進行視覺震撼的超近距離合影</p>
             </div>
         </div>
-        <div class="bg-emerald-50 rounded-xl p-4 border border-emerald-100 flex items-start hover:shadow-md transition-shadow">
-            <div class="bg-emerald-100 text-emerald-600 w-12 h-12 rounded-full flex items-center justify-center text-xl shrink-0 mr-4">
+        <div class="bg-emerald-50/50 rounded-xl p-4 border border-emerald-100 flex items-start hover:shadow-md transition-shadow group">
+            <div class="bg-emerald-100 text-emerald-600 w-12 h-12 rounded-full flex items-center justify-center text-xl shrink-0 mr-4 group-hover:bg-emerald-600 group-hover:text-white transition-colors">
                 <i class="fa-solid fa-leaf"></i>
             </div>
             <div>
-                <h4 class="font-bold text-slate-800">泰北山林大象慢活</h4>
-                <p class="text-sm text-slate-600 mt-1">在大象咖啡廳 Elefin Farm 近距離互動餵食，呼吸清邁山區的純淨芬多精</p>
+                <h4 class="font-bold text-indigo-900">泰北山林大象慢活</h4>
+                <p class="text-sm text-slate-600 mt-1 leading-snug">在大象咖啡廳 Elefin Farm 近距離互動餵食，呼吸清邁山區的純淨芬多精</p>
             </div>
         </div>
-        <div class="bg-indigo-50 rounded-xl p-4 border border-indigo-100 flex items-start hover:shadow-md transition-shadow">
-            <div class="bg-indigo-100 text-indigo-600 w-12 h-12 rounded-full flex items-center justify-center text-xl shrink-0 mr-4">
+        <div class="bg-indigo-50/50 rounded-xl p-4 border border-indigo-100 flex items-start hover:shadow-md transition-shadow group">
+            <div class="bg-indigo-100 text-indigo-600 w-12 h-12 rounded-full flex items-center justify-center text-xl shrink-0 mr-4 group-hover:bg-indigo-600 group-hover:text-white transition-colors">
                 <i class="fa-solid fa-martini-glass-citrus"></i>
             </div>
             <div>
-                <h4 class="font-bold text-slate-800">芭達亞熱點巡禮</h4>
-                <p class="text-sm text-slate-600 mt-1">懸崖餐廳觀景、步行街巡禮、驚喜泡泡浴與震撼的成人大秀，體驗最瘋狂的泰式不夜城</p>
+                <h4 class="font-bold text-indigo-900">芭達亞熱點巡禮</h4>
+                <p class="text-sm text-slate-600 mt-1 leading-snug">懸崖餐廳觀景、步行街巡禮、驚喜泡泡浴與震撼的成人大秀，體驗最瘋狂的泰式不夜城</p>
             </div>
         </div>
-        <div class="bg-indigo-50 rounded-xl p-4 border border-indigo-100 flex items-start hover:shadow-md transition-shadow">
-            <div class="bg-indigo-100 text-indigo-600 w-12 h-12 rounded-full flex items-center justify-center text-xl shrink-0 mr-4">
+        <div class="bg-indigo-50/50 rounded-xl p-4 border border-indigo-100 flex items-start hover:shadow-md transition-shadow group">
+            <div class="bg-indigo-100 text-indigo-600 w-12 h-12 rounded-full flex items-center justify-center text-xl shrink-0 mr-4 group-hover:bg-indigo-600 group-hover:text-white transition-colors">
                 <i class="fa-solid fa-sailboat"></i>
             </div>
             <div>
-                <h4 class="font-bold text-slate-800">經典水上風情</h4>
-                <p class="text-sm text-slate-600 mt-1">搭乘傳統手划船穿梭丹能莎朵水上市場，並在美功鐵道目睹火車擦身而過的震撼奇景</p>
+                <h4 class="font-bold text-indigo-900">經典水上風情</h4>
+                <p class="text-sm text-slate-600 mt-1 leading-snug">搭乘傳統手划船穿梭丹能莎朵水上市場，並在美功鐵道目睹火車擦身而過的震撼奇景</p>
             </div>
         </div>
     </div>
-</div>
 
-<div class="bg-white rounded-2xl shadow-sm p-6 md:p-8 border border-slate-100">
-    <h2 class="text-2xl font-bold text-indigo-900 border-l-4 border-amber-500 pl-3 mb-5">📝 行前提醒與注意事項</h2>
-    <ul class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 text-slate-700">
-        <li class="flex items-start bg-slate-50 p-4 rounded-xl border border-slate-100 hover:border-amber-200 hover:shadow-sm transition-all">
-            <div class="bg-amber-100 text-amber-700 text-xs font-black py-1 px-2 rounded mr-3 mt-0.5 whitespace-nowrap">Day 1</div>
-            <div>
-                <strong class="text-slate-800 block mb-1 flex items-center"><i class="fa-solid fa-passport text-amber-500 mr-2 text-xs"></i> 入境申報提醒</strong>
-                <p class="text-sm text-slate-600">入境泰國前 <span class="text-highlight-amber">72 小時</span>務必預先於線上填寫完畢入境申報資訊</p>
-            </div>
-        </li>
-        <li class="flex items-start bg-slate-50 p-4 rounded-xl border border-slate-100 hover:border-indigo-200 hover:shadow-sm transition-all">
-            <div class="bg-indigo-100 text-indigo-700 text-xs font-black py-1 px-2 rounded mr-3 mt-0.5 whitespace-nowrap">Day 2/3</div>
-            <div>
-                <strong class="text-slate-800 block mb-1 flex items-center"><i class="fa-solid fa-shirt text-indigo-500 mr-2 text-xs"></i> 寺廟服裝規範</strong>
-                <p class="text-sm text-slate-600">參訪<span class="text-highlight-amber">真理聖殿、大城古蹟、臥佛寺、雙龍寺</span>嚴禁短褲、背心及無袖衣物，可備披肩應變</p>
-            </div>
-        </li>
-        <li class="flex items-start bg-slate-50 p-4 rounded-xl border border-slate-100 hover:border-emerald-200 hover:shadow-sm transition-all">
-            <div class="bg-emerald-100 text-emerald-700 text-xs font-black py-1 px-2 rounded mr-3 mt-0.5 whitespace-nowrap">Day 3</div>
-            <div>
-                <strong class="text-slate-800 block mb-1 flex items-center"><i class="fa-solid fa-truck-pickup text-emerald-500 mr-2 text-xs"></i> 大城吉普車預約</strong>
-                <p class="text-sm text-slate-600">與長頸鹿合照名額極其珍貴，務必<span class="text-highlight-amber">提前預約</span>斑馬吉普車，以免現場空手而歸</p>
-            </div>
-        </li>
-        <li class="flex items-start bg-slate-50 p-4 rounded-xl border border-slate-100 hover:border-amber-200 hover:shadow-sm transition-all">
-            <div class="bg-amber-100 text-amber-700 text-xs font-black py-1 px-2 rounded mr-3 mt-0.5 whitespace-nowrap">Day 5</div>
-            <div>
-                <strong class="text-slate-800 block mb-1 flex items-center"><i class="fa-solid fa-stopwatch text-amber-500 mr-2 text-xs"></i> 落地清邁衝刺</strong>
-                <p class="text-sm text-slate-600">11:20 抵達清邁後需<span class="text-highlight-amber">精確對時</span>，執行「行李接駁代辦」策略以無縫對接天燈節專車</p>
-            </div>
-        </li>
-        <li class="flex items-start bg-slate-50 p-4 rounded-xl border border-slate-100 hover:border-amber-200 hover:shadow-sm transition-all">
-            <div class="bg-amber-100 text-amber-700 text-xs font-black py-1 px-2 rounded mr-3 mt-0.5 whitespace-nowrap">Day 5</div>
-            <div>
-                <strong class="text-slate-800 block mb-1 flex items-center"><i class="fa-solid fa-pen-nib text-amber-500 mr-2 text-xs"></i> 行程必備簽字筆</strong>
-                <p class="text-sm text-slate-600">建議隨身攜帶一至兩支<span class="text-highlight-amber">黑色粗款簽字筆</span>，以便在天燈上揮灑並紀錄最真實的心願</p>
-            </div>
-        </li>
-        <li class="flex items-start bg-slate-50 p-4 rounded-xl border border-slate-100 hover:border-amber-200 hover:shadow-sm transition-all">
-            <div class="bg-amber-100 text-amber-700 text-xs font-black py-1 px-2 rounded mr-3 mt-0.5 whitespace-nowrap">Day 5</div>
-            <div>
-                <strong class="text-slate-800 block mb-1 flex items-center"><i class="fa-solid fa-temperature-low text-amber-500 mr-2 text-xs"></i> 夜間涼意提醒</strong>
-                <p class="text-sm text-slate-600">清邁天燈節晚間氣溫可能驟降，請務必備妥<span class="text-highlight-amber">防風外套</span>以免受涼感冒</p>
-            </div>
-        </li>
-    </ul>
-</div>
+    <div class="bg-white rounded-2xl shadow-sm p-6 md:p-8 border border-slate-100 mt-12 mb-12">
+        <div class="mb-6 border-b pb-4">
+            <div class="text-amber-600 font-bold text-sm tracking-widest font-mono uppercase mb-1.5">Travel Essentials</div>
+            <h2 class="text-xl font-black text-indigo-900 tracking-tight flex items-center">
+                <i class="fa-solid fa-clipboard-check text-amber-500 mr-2 text-lg"></i> 行前提醒與注意事項
+            </h2>
+        </div>
+        <ul class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 text-slate-700">
+            <li class="flex items-start bg-amber-50/50 p-4 rounded-xl border border-amber-100 hover:border-amber-300 hover:shadow-sm transition-all group">
+                <div class="bg-amber-100 text-amber-700 text-xs font-black py-1 px-2 rounded mr-3 mt-0.5 whitespace-nowrap group-hover:bg-amber-600 group-hover:text-white transition-colors">Day 1</div>
+                <div>
+                    <strong class="text-indigo-900 block mb-1 flex items-center"><i class="fa-solid fa-passport text-amber-500 mr-2 text-xs"></i> 入境申報提醒</strong>
+                    <p class="text-sm text-slate-600 leading-snug">入境泰國前 <span class="text-highlight-amber">72 小時</span>務必預先於線上填寫完畢入境申報資訊</p>
+                </div>
+            </li>
+            <li class="flex items-start bg-indigo-50/30 p-4 rounded-xl border border-indigo-100 hover:border-indigo-300 hover:shadow-sm transition-all group">
+                <div class="bg-indigo-100 text-indigo-700 text-xs font-black py-1 px-2 rounded mr-3 mt-0.5 whitespace-nowrap group-hover:bg-indigo-600 group-hover:text-white transition-colors">Day 2/3</div>
+                <div>
+                    <strong class="text-indigo-900 block mb-1 flex items-center"><i class="fa-solid fa-shirt text-indigo-500 mr-2 text-xs"></i> 寺廟服裝規範</strong>
+                    <p class="text-sm text-slate-600 leading-snug">參訪<span class="text-highlight-amber">真理聖殿、大城古蹟、臥佛寺、雙龍寺</span>嚴禁短褲、背心及無袖衣物，可備披肩應變</p>
+                </div>
+            </li>
+            <li class="flex items-start bg-emerald-50/30 p-4 rounded-xl border border-emerald-100 hover:border-emerald-300 hover:shadow-sm transition-all group">
+                <div class="bg-emerald-100 text-emerald-700 text-xs font-black py-1 px-2 rounded mr-3 mt-0.5 whitespace-nowrap group-hover:bg-emerald-600 group-hover:text-white transition-colors">Day 3</div>
+                <div>
+                    <strong class="text-indigo-900 block mb-1 flex items-center"><i class="fa-solid fa-truck-pickup text-emerald-500 mr-2 text-xs"></i> 大城吉普車預約</strong>
+                    <p class="text-sm text-slate-600 leading-snug">與長頸鹿合照名額極其珍貴，務必<span class="text-highlight-amber">提前預約</span>斑馬吉普車，以免現場空手而歸</p>
+                </div>
+            </li>
+            <li class="flex items-start bg-amber-50/50 p-4 rounded-xl border border-amber-100 hover:border-amber-300 hover:shadow-sm transition-all group">
+                <div class="bg-amber-100 text-amber-700 text-xs font-black py-1 px-2 rounded mr-3 mt-0.5 whitespace-nowrap group-hover:bg-amber-600 group-hover:text-white transition-colors">Day 5</div>
+                <div>
+                    <strong class="text-indigo-900 block mb-1 flex items-center"><i class="fa-solid fa-stopwatch text-amber-500 mr-2 text-xs"></i> 落地清邁衝刺</strong>
+                    <p class="text-sm text-slate-600 leading-snug">11:20 抵達清邁後需<span class="text-highlight-amber">精確對時</span>，執行「行李接駁代辦」策略以無縫對接天燈節專車</p>
+                </div>
+            </li>
+            <li class="flex items-start bg-amber-50/50 p-4 rounded-xl border border-amber-100 hover:border-amber-300 hover:shadow-sm transition-all group">
+                <div class="bg-amber-100 text-amber-700 text-xs font-black py-1 px-2 rounded mr-3 mt-0.5 whitespace-nowrap group-hover:bg-amber-600 group-hover:text-white transition-colors">Day 5</div>
+                <div>
+                    <strong class="text-indigo-900 block mb-1 flex items-center"><i class="fa-solid fa-pen-nib text-amber-500 mr-2 text-xs"></i> 行程必備簽字筆</strong>
+                    <p class="text-sm text-slate-600 leading-snug">建議隨身攜帶一至兩支<span class="text-highlight-amber">黑色粗款簽字筆</span>，以便在天燈上揮灑並紀錄最真實的心願</p>
+                </div>
+            </li>
+            <li class="flex items-start bg-amber-50/50 p-4 rounded-xl border border-amber-100 hover:border-amber-300 hover:shadow-sm transition-all group">
+                <div class="bg-amber-100 text-amber-700 text-xs font-black py-1 px-2 rounded mr-3 mt-0.5 whitespace-nowrap group-hover:bg-amber-600 group-hover:text-white transition-colors">Day 5</div>
+                <div>
+                    <strong class="text-indigo-900 block mb-1 flex items-center"><i class="fa-solid fa-temperature-low text-amber-500 mr-2 text-xs"></i> 夜間涼意提醒</strong>
+                    <p class="text-sm text-slate-600 leading-snug">清邁天燈節晚間氣溫可能驟降，請務必備妥<span class="text-highlight-amber">防風外套</span>以免受涼感冒</p>
+                </div>
+            </li>
+        </ul>
+    </div>
 </body>
 </html>
