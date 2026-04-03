@@ -66,6 +66,16 @@ body {
     box-shadow: 0 0 8px rgba(244, 63, 94, 0.5);
 }
 
+.timeline-item-emerald { 
+    position: relative; padding-left: 2rem; padding-bottom: 1.5rem; 
+    border-left: 2px solid #6ee7b7; /* emerald-300 */
+}
+.timeline-item-emerald .timeline-dot { 
+    position: absolute; left: -0.4rem; top: 0.25rem; width: 0.75rem; height: 0.75rem; 
+    border-radius: 50%; background-color: #10b981; /* emerald-500 */
+    box-shadow: 0 0 8px rgba(16, 185, 129, 0.5);
+}
+
 .timeline-item-amber { 
     position: relative; padding-left: 2rem; padding-bottom: 1.5rem; 
     border-left: 2px solid #fcd34d; /* amber-300 */
