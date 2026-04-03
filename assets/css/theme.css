@@ -49,10 +49,31 @@ body {
 
 /* 交通時間軸 (虛線) */
 .timeline-item-transfer { position: relative; padding-left: 2rem; padding-bottom: 1.5rem; border-left: 2px dashed #cbd5e1; }
-.timeline-item-transfer:last-child { border-left: 2px solid transparent; padding-bottom: 0; }
+.timeline-item-transfer:last-child { border-left: 2px dashed transparent; padding-bottom: 0; }
 .timeline-dot-transfer { 
     position: absolute; left: -0.32rem; top: 0.35rem; width: 0.6rem; height: 0.6rem; 
     border-radius: 50%; background-color: #94a3b8; 
+}
+
+/* 分支色系樣式擴充 (獨立類別) */
+.timeline-item-rose { 
+    position: relative; padding-left: 2rem; padding-bottom: 1.5rem; 
+    border-left: 2px solid #fda4af; /* rose-300 */
+}
+.timeline-item-rose .timeline-dot { 
+    position: absolute; left: -0.4rem; top: 0.25rem; width: 0.75rem; height: 0.75rem; 
+    border-radius: 50%; background-color: #f43f5e; /* rose-500 */
+    box-shadow: 0 0 8px rgba(244, 63, 94, 0.5);
+}
+
+.timeline-item-amber { 
+    position: relative; padding-left: 2rem; padding-bottom: 1.5rem; 
+    border-left: 2px solid #fcd34d; /* amber-300 */
+}
+.timeline-item-amber .timeline-dot { 
+    position: absolute; left: -0.4rem; top: 0.25rem; width: 0.75rem; height: 0.75rem; 
+    border-radius: 50%; background-color: var(--color-amber-gold); 
+    box-shadow: 0 0 8px rgba(245, 158, 11, 0.5);
 }
 
 /* 文字裝飾樣式 */

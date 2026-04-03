@@ -1,181 +1,237 @@
 <!DOCTYPE html>
 <html lang="zh-Hant">
+
 <head>
     <meta charset="UTF-8">
     <title>Day 2 模組</title>
 </head>
+
 <body>
-<h2 class="text-2xl font-bold text-indigo-900 mb-6 border-b pb-4">Day 2 (11/22)：芭達亞文化、網美與視覺衝擊</h2>
+    <h2 class="text-2xl font-bold text-indigo-900 mb-6 border-b pb-4">Day 2 (11/22)：芭達亞文化、網美與視覺衝擊</h2>
 
-<div class="timeline-item">
-    <div class="timeline-dot"></div>
-    <div class="text-amber-600 font-bold text-sm mb-1 tracking-wider font-mono">10:15</div>
-    <h3 class="text-lg font-bold text-slate-800 mb-2">飯店退房與集合</h3>
-    <ul class="bullet-list text-slate-600 text-sm">
-        <li>早餐於飯店內自理。</li>
-        <li>10:15 大廳集合退房，接駁預約 10:30。</li>
-    </ul>
-</div>
-
-<div class="timeline-item-transfer border-l-2 border-slate-300 border-dashed">
-    <div class="timeline-dot-transfer border-slate-300"></div>
-    <div class="text-slate-400 font-medium text-xs mb-1 tracking-wider font-mono">10:30 - 11:00</div>
-    <h3 class="text-base font-semibold text-slate-500 mb-1">飯店 前往 真理聖殿</h3>
-    <p class="text-slate-400 text-sm">包車車程約 30 分鐘。</p>
-</div>
-
-<div class="timeline-item">
-    <div class="timeline-dot"></div>
-    <div class="text-amber-600 font-bold text-sm mb-1 tracking-wider font-mono">11:00 - 12:00</div>
-    <h3 class="text-lg font-bold text-slate-800 mb-2">真理聖殿 Sanctuary of Truth</h3>
-    <ul class="bullet-list text-slate-600 text-sm">
-        <li>參觀全木造建築藝術品。導覽於 11:10 開始 (可事先購票)。</li>
-    </ul>
-    <div class="note-box">
-        <i class="fa-solid fa-circle-exclamation"></i>
-        <div><strong>⚠️ 備註：</strong>禁短褲、背心、短裙、無袖上衣等。現場可租披肩 (200泰銖押金)。</div>
+    <!-- 飯店集合 -->
+    <div class="timeline-item-amber">
+        <div class="timeline-dot"></div>
+        <div class="text-amber-600 font-bold text-sm mb-1 tracking-wider font-mono">10:20 - 10:30</div>
+        <h3 class="text-lg font-bold text-slate-800 mb-2">飯店退房與集合</h3>
+        <ul class="bullet-list text-slate-600 text-sm">
+            <li>早餐於飯店內自理。</li>
+            <li>10:20 大廳集合退房，接駁預約 10:30。</li>
+        </ul>
     </div>
-</div>
 
-<div class="timeline-item-transfer border-l-2 border-slate-300 border-dashed">
-    <div class="timeline-dot-transfer border-slate-300"></div>
-    <div class="text-slate-400 font-medium text-xs mb-1 tracking-wider font-mono">12:00 - 12:15</div>
-    <h3 class="text-base font-semibold text-slate-500 mb-1">前往 咖啡廳</h3>
-    <p class="text-slate-400 text-sm">交通轉移。</p>
-</div>
-
-<div class="timeline-item">
-    <div class="timeline-dot"></div>
-    <div class="text-amber-600 font-bold text-sm mb-1 tracking-wider font-mono">12:15 - 13:15</div>
-    <h3 class="text-lg font-bold text-slate-800 mb-2">The calendar café</h3>
-    <ul class="bullet-list text-slate-600 text-sm">
-        <li>休息一下停留 1H 離開，推薦：香蕉蛋糕、椰子蛋糕都很好吃。</li>
-    </ul>
-</div>
-
-<div class="timeline-item-transfer border-l-2 border-slate-300 border-dashed">
-    <div class="timeline-dot-transfer border-slate-300"></div>
-    <div class="text-slate-400 font-medium text-xs mb-1 tracking-wider font-mono">13:15 - 13:30</div>
-    <h3 class="text-base font-semibold text-slate-500 mb-1">前往 泡泡浴 / 按摩店</h3>
-    <p class="text-slate-400 text-sm">交通轉移，車程約 20 分鐘。</p>
-</div>
-
-<!-- 雙線行程區塊 (Day 2) -->
-<div class="bg-slate-50/50 rounded-2xl border border-slate-100 mb-6 overflow-hidden mt-4">
-    <div class="bg-slate-100/80 px-4 py-3 border-b border-slate-200 flex items-center">
-        <i class="fa-solid fa-code-branch text-slate-600 mr-2 mt-0.5"></i>
-        <h3 class="font-bold text-slate-900">13:30 - 16:15 雙線分流行程</h3>
+    <!-- 交通：前往真理聖殿 -->
+    <div class="timeline-item-transfer">
+        <div class="timeline-dot-transfer"></div>
+        <div class="text-slate-400 font-medium text-xs mb-1 tracking-wider font-mono">10:30 - 11:00</div>
+        <h3 class="text-base font-semibold text-slate-500 mb-1">飯店 前往 真理聖殿</h3>
+        <p class="text-slate-400 text-xs">包車車程約 30 分鐘</p>
     </div>
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-0">
-        <!-- 左側：主線行程 (按摩) -->
-        <div class="p-5 md:pr-6 md:border-r border-slate-200 border-dashed bg-amber-50/30">
-            <div class="inline-flex items-center bg-amber-50/80 border border-amber-200/80 text-amber-700 text-xs font-bold px-3 py-1.5 rounded-md mb-5 shadow-sm">
-                <i class="fa-solid fa-star mr-1.5 text-amber-500"></i>主線行程
-            </div>
-            <div class="pt-2">
-                <div class="timeline-item-transfer border-l-2 border-slate-300 border-dashed">
-                    <div class="timeline-dot-transfer border-slate-300"></div>
-                    <div class="text-slate-400 font-medium text-xs mb-1 tracking-wider font-mono">14:00 - 14:30</div>
-                    <h3 class="text-base font-semibold text-slate-500 mb-1">前往 按摩店</h3>
-                    <p class="text-slate-400 text-sm">交通轉移。</p>
+
+    <!-- 真理聖殿 -->
+    <div class="timeline-item-amber">
+        <div class="timeline-dot"></div>
+        <div class="text-amber-600 font-bold text-sm mb-1 tracking-wider font-mono">11:00 - 12:10</div>
+        <h3 class="text-lg font-bold text-slate-800 mb-2">
+            真理聖殿 Sanctuary of Truth
+            <a href="https://www.google.com/maps/search/?api=1&query=Sanctuary+of+Truth+Pattaya" target="_blank"
+                class="ml-1 text-amber-500 hover:text-amber-700 transition-colors" title="Google Maps導航">
+                <i class="fa-solid fa-location-dot text-xs"></i>
+            </a>
+        </h3>
+        <ul class="bullet-list text-slate-600 text-sm">
+            <li>遊覽全木造建築奇蹟。導覽於 11:10 開始。預購票務請見費用頁。</li>
+        </ul>
+        <div class="note-box">
+            <i class="fa-solid fa-shirt"></i>
+            <div><strong>服裝規定：</strong>禁止短褲、背心、無袖上衣。現場提供披肩租借 (200 泰銖押金)。</div>
+        </div>
+    </div>
+
+    <div class="timeline-item-transfer">
+        <div class="timeline-dot-transfer border-slate-300"></div>
+        <div class="text-slate-400 font-medium text-xs mb-1 tracking-wider font-mono">12:10 - 12:20</div>
+        <h3 class="text-base font-semibold text-slate-500 mb-1">前往 咖啡廳</h3>
+        <p class="text-slate-400 text-xs">交通轉移</p>
+    </div>
+
+    <!-- 咖啡廳 -->
+    <div class="timeline-item-amber">
+        <div class="timeline-dot"></div>
+        <div class="text-amber-600 font-bold text-sm mb-1 tracking-wider font-mono">12:20 - 13:20</div>
+        <h3 class="text-lg font-bold text-slate-800 mb-2">
+            The calendar café
+            <a href="https://www.google.com/maps/search/?api=1&query=The+calendar+cafe+Pattaya" target="_blank"
+                class="ml-1 text-amber-500 hover:text-amber-700 transition-colors" title="Google Maps導航">
+                <i class="fa-solid fa-location-dot text-xs"></i>
+            </a>
+        </h3>
+        <ul class="bullet-list text-slate-600 text-sm">
+            <li>芭達亞質感午茶，推薦必點：<span class="font-bold text-amber-600 text-sm">香蕉蛋糕</span>、<span
+                    class="font-bold text-amber-600 text-sm">椰子蛋糕</span>都很好吃。</li>
+        </ul>
+    </div>
+
+    <div class="timeline-item-transfer">
+        <div class="timeline-dot-transfer"></div>
+        <div class="text-slate-400 font-medium text-xs mb-1 tracking-wider font-mono">13:20 - 13:40</div>
+        <h3 class="text-base font-semibold text-slate-500 mb-1">前往 泡泡浴 / 按摩店</h3>
+        <p class="text-slate-400 text-xs">交通轉移，車程約 20 分鐘</p>
+    </div>
+
+    <!-- 雙線行程區塊 -->
+    <div class="bg-slate-50/50 rounded-2xl border border-slate-100 mb-6 overflow-hidden mt-4">
+        <div class="bg-white/80 px-4 py-3 border-b border-slate-200 flex items-center">
+            <i class="fa-solid fa-code-branch text-slate-600 mr-2 mt-0.5"></i>
+            <h3 class="font-bold text-slate-900">13:40 - 16:15 雙線分流行程</h3>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-0">
+            <!-- 左側：主線行程 (按摩) -->
+            <div class="p-5 md:pr-6 md:border-r border-slate-200 border-dashed bg-amber-50/30">
+                <div
+                    class="inline-flex items-center bg-amber-100/80 border border-amber-200/50 text-amber-800 text-xs font-bold px-3 py-1.5 rounded-md mb-5 shadow-sm">
+                    <i class="fa-solid fa-star mr-1.5 text-amber-500"></i>主線行程
                 </div>
-                <div class="timeline-item border-l-2 border-transparent pb-0 h-full">
-                    <div class="timeline-dot bg-indigo-500"></div>
-                    <div class="text-indigo-600 font-bold text-sm mb-1 tracking-wider font-mono">14:30 - 16:15</div>
-                    <h3 class="text-lg font-bold text-slate-800 mb-2">The One Massage</h3>
-                    <ul class="bullet-list text-slate-600 text-sm">
-                        <li>預約 14:30 (1H療程)。</li>
-                        <li>精油按摩可洗澡，並附有免費點心芒果糯米飯。</li>
-                    </ul>
+                <div class="pt-2">
+                    <div class="timeline-item-transfer">
+                        <div class="timeline-dot-transfer"></div>
+                        <div class="text-slate-400 font-medium text-xs mb-1 tracking-wider font-mono">13:40 - 14:30
+                        </div>
+                        <h3 class="text-base font-semibold text-slate-500 mb-1">前往 按摩店</h3>
+                        <p class="text-slate-400 text-xs">交通轉移</p>
+                    </div>
+                    <div class="timeline-item-amber">
+                        <div class="timeline-dot"></div>
+                        <div class="text-amber-600 font-bold text-sm mb-1 tracking-wider font-mono">14:30 - 16:15</div>
+                        <h3 class="text-lg font-bold text-slate-800 mb-2">
+                        The One Massage
+                        <a href="https://www.google.com/maps/search/?api=1&query=The+One+Massage+Pattaya" target="_blank" class="ml-1 text-amber-500 hover:text-amber-700 transition-colors" title="Google Maps導航">
+                            <i class="fa-solid fa-location-dot text-xs"></i>
+                        </a>
+                    </h3>
+                        <ul class="bullet-list text-slate-600 text-sm">
+                            <li>預約 14:30 (1H療程)。</li>
+                            <li>精油按摩結束後<span class="font-bold text-amber-600 text-sm">可現場沖澡</span>，清爽乾淨出發。</li>
+                            <li>療程結束後附有免費點心 <span class="font-bold text-amber-600">芒果糯米飯</span>。</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- 右側：特色體驗 (泡泡浴) -->
+            <div class="p-5 md:pl-6 border-t md:border-t-0 border-slate-200 border-dashed bg-white/50">
+                <div
+                    class="inline-flex items-center bg-rose-100/80 border border-rose-200/50 text-rose-800 text-xs font-bold px-3 py-1.5 rounded-md mb-5 shadow-sm">
+                    <i class="fa-solid fa-user-tag mr-1.5 text-rose-500"></i>特色體驗
+                </div>
+                <div class="pt-2">
+                    <div class="timeline-item-rose pb-0">
+                        <div class="timeline-dot"></div>
+                        <div class="text-rose-600 font-bold text-sm mb-1 tracking-wider font-mono">13:40 - 16:00</div>
+                        <h3 class="text-lg font-bold text-slate-800 mb-2">泰國暗黑泡泡浴</h3>
+                        <ul class="bullet-list text-slate-600 text-sm">
+                            <li>前往觀看選妃並體驗泰國特色成人文化，療程約 1.5H。</li>
+                        </ul>
+                    </div>
+                    <div class="timeline-item-transfer">
+                        <div class="timeline-dot-transfer"></div>
+                        <div class="text-slate-400 font-medium text-xs mb-1 tracking-wider font-mono">16:00 - 16:15
+                        </div>
+                        <h3 class="text-base font-semibold text-slate-500 mb-1">交通轉移</h3>
+                        <p class="text-slate-400 text-xs">前往集合地點與組員會合</p>
+                    </div>
                 </div>
             </div>
         </div>
-        <!-- 右側：特色體驗 (泡泡浴) -->
-        <div class="p-5 md:pl-6 border-t md:border-t-0 border-slate-200 border-dashed bg-white/50">
-            <div class="inline-flex items-center bg-rose-50/80 border border-rose-200/80 text-rose-700 text-xs font-bold px-3 py-1.5 rounded-md mb-5 shadow-sm">
-                <i class="fa-solid fa-user-tag mr-1.5 text-rose-500"></i>特色體驗
+        <!-- 補回會合提醒 -->
+        <div class="bg-slate-100/50 px-5 py-4 border-t border-slate-200 flex items-start">
+            <div
+                class="bg-slate-500 text-white rounded-full w-6 h-6 flex items-center justify-center shrink-0 mr-3 mt-0.5 text-xs shadow-sm">
+                <i class="fa-solid fa-bullhorn"></i>
             </div>
-            <div class="pt-2">
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="text-amber-600 font-bold text-sm mb-1 tracking-wider font-mono">13:30 - 16:00</div>
-                    <h3 class="text-lg font-bold text-slate-800 mb-2">泰國暗黑泡泡浴</h3>
-                    <ul class="bullet-list text-slate-600 text-sm">
-                        <li>前往觀看選妃與見世面體驗，療程大約 1.5H。</li>
-                    </ul>
-                </div>
-                <div class="timeline-item-transfer border-l-2 border-slate-300 border-dashed pb-0">
-                    <div class="timeline-dot-transfer border-slate-300"></div>
-                    <div class="text-slate-400 font-medium text-xs mb-1 tracking-wider font-mono">16:00 - 16:15</div>
-                    <h3 class="text-base font-semibold text-slate-500 mb-1">前往 會合地點</h3>
-                    <p class="text-slate-400 text-sm">交通轉移。</p>
-                </div>
+            <div>
+                <h4 class="font-bold text-slate-800 text-sm">接駁會合提醒</h4>
+                <p class="text-sm text-slate-600 mt-1">司機送達按摩組後，將返回接應泡泡浴組成員會合。</p>
             </div>
         </div>
     </div>
-    <div class="bg-slate-100/50 px-5 py-4 border-t border-slate-200 flex items-start">
-        <div class="bg-slate-500 text-white rounded-full w-6 h-6 flex items-center justify-center shrink-0 mr-3 mt-0.5 text-xs shadow-sm">
-            <i class="fa-solid fa-bullhorn"></i>
-        </div>
-        <div>
-            <h4 class="font-bold text-slate-800 text-sm">接駁會合提醒</h4>
-            <p class="text-sm text-slate-600 mt-1">司機送達按摩組後，將返回接應泡泡浴組成員會合。</p>
+
+    <div class="timeline-item-transfer">
+        <div class="timeline-dot-transfer shadow-[0_0_8px_rgba(203,213,225,0.5)]"></div>
+        <div class="text-slate-400 font-medium text-xs mb-1 tracking-wider font-mono">16:15 - 16:30</div>
+        <h3 class="text-base font-semibold text-slate-500 mb-1">前往 The Sky Gallery</h3>
+        <p class="text-slate-400 text-xs">交通轉移，車程約 15 分鐘</p>
+    </div>
+
+    <!-- Sky Gallery -->
+    <div class="timeline-item-amber">
+        <div class="timeline-dot"></div>
+        <div class="text-amber-600 font-bold text-sm mb-1 tracking-wider font-mono">16:30 - 18:30</div>
+        <h3 class="text-lg font-bold text-slate-800 mb-2">
+            The Sky Gallery 夕陽晚餐
+            <a href="https://www.google.com/maps/search/?api=1&query=The+Sky+Gallery+Pattaya" target="_blank"
+                class="ml-1 text-amber-500 hover:text-amber-700 transition-colors" title="Google Maps導航">
+                <i class="fa-solid fa-location-dot text-xs"></i>
+            </a>
+        </h3>
+        <ul class="bullet-list text-slate-600 text-sm">
+            <li>芭達亞超級著名的懸崖海景餐廳，賞夕陽首選。</li>
+            <li>設有<span class="font-bold text-amber-600 text-sm">室內冷氣座位</span>，怕熱也能優雅用餐。</li>
+            <li>可從樹旁的石梯小徑蜿蜒而下，<span class="font-bold text-amber-600 text-sm">直達海灘玩水</span>。</li>
+        </ul>
+        <div class="note-box">
+            <i class="fa-solid fa-calendar-check text-amber-600"></i>
+            <div><strong>預訂提醒：</strong>最熱門的「戶外鳥巢區」一位難求，務必事先預訂。</div>
         </div>
     </div>
-</div>
 
-<div class="timeline-item-transfer border-l-2 border-slate-300 border-dashed">
-    <div class="timeline-dot-transfer border-slate-300"></div>
-    <div class="text-slate-400 font-medium text-xs mb-1 tracking-wider font-mono">16:15 - 16:30</div>
-    <h3 class="text-base font-semibold text-slate-500 mb-1">前往 The Sky Gallery</h3>
-    <p class="text-slate-400 text-sm">車程約 15 分鐘。</p>
-</div>
-
-<div class="timeline-item">
-    <div class="timeline-dot"></div>
-    <div class="text-amber-600 font-bold text-sm mb-1 tracking-wider font-mono">16:30 - 18:30</div>
-    <h3 class="text-lg font-bold text-slate-800 mb-2">The Sky Gallery 夕陽晚餐</h3>
-    <ul class="bullet-list text-slate-600 text-sm">
-        <li>前往芭達亞超級著名的懸崖海景餐廳，觀賞夕陽與享用晚餐。</li>
-        <li>有室內冷氣坐位，最熱門的是戶外鳥巢區（需先預訂）。</li>
-        <li>從樹旁的石梯小徑蜿蜒而下，可直達海灘玩水。</li>
-    </ul>
-</div>
-
-<div class="timeline-item-transfer border-l-2 border-slate-300 border-dashed">
-    <div class="timeline-dot-transfer border-slate-300"></div>
-    <div class="text-slate-400 font-medium text-xs mb-1 tracking-wider font-mono">18:30 - 19:00</div>
-    <h3 class="text-base font-semibold text-slate-500 mb-1">前往 6996 秀場</h3>
-    <p class="text-slate-400 text-sm">車程約 30 分鐘。</p>
-</div>
-
-<div class="timeline-item">
-    <div class="timeline-dot"></div>
-    <div class="text-amber-600 font-bold text-sm mb-1 tracking-wider font-mono">19:00 - 20:15</div>
-    <h3 class="text-lg font-bold text-slate-800 mb-2">6996 成人秀</h3>
-    <ul class="bullet-list text-slate-600 text-sm">
-        <li>充滿各種挑戰視覺極限的情色表演，每場大約 50 分鐘。</li>
-    </ul>
-    <div class="note-box">
-        <i class="fa-solid fa-circle-exclamation"></i>
-        <div><strong>⚠️ 備註：</strong>現場禁止帶手機入場。</div>
+    <div class="timeline-item-transfer">
+        <div class="timeline-dot-transfer border-slate-300"></div>
+        <div class="text-slate-400 font-medium text-xs mb-1 tracking-wider font-mono">18:30 - 19:00</div>
+        <h3 class="text-base font-semibold text-slate-500 mb-1">前往 6996 秀場</h3>
+        <p class="text-slate-400 text-xs">交通轉移，車程約 30 分鐘</p>
     </div>
-</div>
 
-<div class="timeline-item-transfer border-l-2 border-slate-300 border-dashed">
-    <div class="timeline-dot-transfer border-slate-300"></div>
-    <div class="text-slate-400 font-medium text-xs mb-1 tracking-wider font-mono">20:15 - 22:30</div>
-    <h3 class="text-base font-semibold text-slate-500 mb-1">芭達亞 前往 曼谷</h3>
-    <p class="text-slate-400 text-sm">行程結束後，乘包車驅車前往曼谷市區 (車程 2H)，預計 22:30 前抵達。</p>
-</div>
+    <!-- 6996 成人秀 -->
+    <div class="timeline-item-amber">
+        <div class="timeline-dot"></div>
+        <div class="text-amber-600 font-bold text-sm mb-1 tracking-wider font-mono">19:00 - 20:15</div>
+        <h3 class="text-lg font-bold text-slate-800 mb-2">
+            6996 成人秀
+            <a href="https://www.google.com/maps/search/?api=1&query=6996+Show+Pattaya" target="_blank"
+                class="ml-1 text-amber-500 hover:text-amber-700 transition-colors" title="Google Maps導航">
+                <i class="fa-solid fa-location-dot text-xs"></i>
+            </a>
+        </h3>
+        <ul class="bullet-list text-slate-600 text-sm">
+            <li>充滿各種挑戰視覺極限的情色表演，每場大約 50 分鐘。</li>
+        </ul>
+        <div class="note-box">
+            <i class="fa-solid fa-circle-exclamation text-amber-600"></i>
+            <div><strong>嚴格規定：</strong>場內絕對禁止攜帶手機或任何錄影設備進入。</div>
+        </div>
+    </div>
 
-<div class="timeline-item border-transparent pb-0">
-    <div class="timeline-dot"></div>
-    <div class="text-amber-600 font-bold text-sm mb-1 tracking-wider font-mono">22:30 後</div>
-    <h3 class="text-lg font-bold text-slate-800 mb-2">Shama Yen-Akat Bangkok 入住與休息</h3>
-    <ul class="bullet-list text-slate-600 text-sm">
-        <li>抵達曼谷飯店並辦理入住，結束充實的一天。</li>
-    </ul>
-</div>
+    <div class="timeline-item-transfer">
+        <div class="timeline-dot-transfer"></div>
+        <div class="text-slate-400 font-medium text-xs mb-1 tracking-wider font-mono">20:15 - 22:30</div>
+        <h3 class="text-base font-semibold text-slate-500 mb-1">芭達亞 前往 曼谷</h3>
+        <p class="text-slate-400 text-xs">行程結束後，乘包車驅車前往曼谷市區 (車程 2H)，預計 22:30 前抵達</p>
+    </div>
+
+    <!-- 結尾飯店 -->
+    <div class="timeline-item-amber border-transparent pb-0">
+        <div class="timeline-dot"></div>
+        <div class="text-amber-600 font-bold text-sm mb-1 tracking-wider font-mono">22:30</div>
+        <h3 class="text-lg font-bold text-slate-800 mb-2">
+            Shama Yen-Akat Bangkok 入住與休息
+            <a href="https://www.google.com/maps/search/?api=1&query=Shama+Yen-Akat+Bangkok" target="_blank" class="ml-1 text-indigo-400 hover:text-indigo-600 transition-colors" title="Google Maps導航">
+                <i class="fa-solid fa-location-dot text-xs"></i>
+            </a>
+        </h3>
+        <ul class="bullet-list text-slate-600 text-sm">
+            <li>抵達曼谷飯店並辦理入住，結束充實的一天</li>
+        </ul>
+    </div>
 </body>
+
 </html>
