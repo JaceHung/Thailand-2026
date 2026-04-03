@@ -14,8 +14,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet">
-    <!-- 更新路徑：指向 src 資料夾下的共用 CSS -->
-    <link rel="stylesheet" href="src/shared-theme.css">
+    <!-- 更新路徑：指向 assets 資料夾下的共用 CSS -->
+    <link rel="stylesheet" href="assets/css/theme.css">
 </head>
 <body>
 
@@ -63,77 +63,6 @@
         </div>
     </main>
 
-    <script>
-        // 切換主頁籤：路徑指向 src/ 檔案
-        async function switchMainTab(tabId) {
-            document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
-            document.getElementById('tab-' + tabId).classList.add('active');
-            
-            const contentArea = document.getElementById('content-area');
-            contentArea.innerHTML = '<div class="text-center py-20 text-slate-400"><i class="fa-solid fa-spinner fa-spin text-3xl mb-3"></i><p>載入中...</p></div>';
-            
-            try {
-                const response = await fetch(`src/${tabId}.html`);
-                if (response.ok) {
-                    const html = await response.text();
-                    contentArea.innerHTML = `<div class="animate-fade-in">${html}</div>`;
-                    
-                    if (tabId === 'itinerary') {
-                        switchDay(1); // 預設載入 Day 1
-                    }
-                } else {
-                    contentArea.innerHTML = `<div class="p-8 bg-rose-50 text-rose-600 rounded-xl font-bold text-center">載入 src/${tabId}.html 失敗。請檢查檔案位置。</div>`;
-                }
-            } catch (error) {
-                contentArea.innerHTML = `<div class="p-8 bg-rose-50 text-rose-600 rounded-xl font-bold text-center">發生錯誤：請確認是否使用本地伺服器 (Live Server) 開啟。</div>`;
-            }
-        }
-
-        // 每日行程子頁籤：路徑指向 src/itinerary/ 資料夾
-        async function switchDay(dayNum) {
-            document.querySelectorAll('.day-btn').forEach(btn => {
-                btn.style.background = '';
-                btn.classList.remove('active', 'text-white', 'border-indigo-800', 'bg-slate-200');
-                btn.classList.add('text-slate-600', 'border-slate-100');
-            });
-            
-            const activeBtn = document.getElementById('btn-day' + dayNum);
-            if(activeBtn) {
-                activeBtn.classList.remove('text-slate-600', 'border-slate-100', 'text-slate-500', 'bg-slate-50');
-                activeBtn.classList.add('active');
-            }
-            
-            const dayContentArea = document.getElementById('day-content-area');
-            if(!dayContentArea) return;
-
-            dayContentArea.innerHTML = '<div class="text-center py-10 text-slate-400"><i class="fa-solid fa-spinner fa-spin text-2xl"></i></div>';
-
-            try {
-                const response = await fetch(`src/itinerary/day_${dayNum}.html`);
-                if (response.ok) {
-                    const html = await response.text();
-                    dayContentArea.innerHTML = `<div class="animate-fade-in">${html}</div>`;
-                    toggleTransfers(); 
-                } else {
-                    dayContentArea.innerHTML = `<div class="p-4 text-rose-500 text-center font-bold">載入 src/itinerary/day_${dayNum}.html 失敗</div>`;
-                }
-            } catch (error) {
-                dayContentArea.innerHTML = `<div class="p-4 text-rose-500 text-center">載入失敗，請確認檔案路徑。</div>`;
-            }
-        }
-
-        function toggleTransfers() {
-            const toggleElement = document.getElementById('transfer-toggle');
-            if(!toggleElement) return;
-            const isChecked = toggleElement.checked;
-            document.querySelectorAll('.timeline-item-transfer').forEach(el => {
-                isChecked ? el.classList.remove('hidden') : el.classList.add('hidden');
-            });
-        }
-
-        document.addEventListener('DOMContentLoaded', () => {
-            switchMainTab('overview');
-        });
-    </script>
+    <script src="assets/js/app.js"></script>
 </body>
 </html>
