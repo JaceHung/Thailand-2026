@@ -29,7 +29,16 @@ async function switchMainTab(tabId) {
     contentArea.innerHTML = `<div class="animate-fade-in">${html}</div>`;
     
     if (tabId === 'itinerary') {
-        switchDay(1); 
+        const savedDay = localStorage.getItem('selectedDay') || 1;
+        switchDay(savedDay); 
+    }
+    
+    if (tabId === 'costs') {
+        const toggleEl = document.getElementById('charter-expand-toggle');
+        if (toggleEl && localStorage.getItem('showCharterDetails') !== null) {
+            toggleEl.checked = localStorage.getItem('showCharterDetails') === 'true';
+            if (typeof toggleCharterDetails === "function") toggleCharterDetails();
+        }
     }
 }
 
@@ -38,6 +47,8 @@ window.switchMainTab = switchMainTab;
 window.switchDay = switchDay;
 
 async function switchDay(dayNum) {
+    localStorage.setItem('selectedDay', dayNum);
+    
     document.querySelectorAll('.day-btn').forEach(btn => {
         btn.classList.remove('active', 'text-white', 'border-indigo-800', 'bg-slate-200');
         btn.classList.add('text-slate-600', 'border-slate-100');
@@ -56,18 +67,41 @@ async function switchDay(dayNum) {
     
     const html = await loadHTML(`src/itinerary/day_${dayNum}.html`);
     dayContentArea.innerHTML = `<div class="animate-fade-in">${html}</div>`;
+    
+    // 復原交通開關狀態
+    const toggleEl = document.getElementById('transfer-toggle');
+    if (toggleEl && localStorage.getItem('showTransfers') !== null) {
+        toggleEl.checked = localStorage.getItem('showTransfers') === 'true';
+    }
+    
     if (typeof toggleTransfers === "function") toggleTransfers(); 
 }
 
 function toggleTransfers() {
     const toggleElement = document.getElementById('transfer-toggle');
     if (!toggleElement) return;
+    
     const isChecked = toggleElement.checked;
+    localStorage.setItem('showTransfers', isChecked);
+    
     document.querySelectorAll('.timeline-item-transfer').forEach(el => {
         el.classList.toggle('hidden', !isChecked);
     });
 }
 window.toggleTransfers = toggleTransfers;
+
+function toggleCharterDetails() {
+    const toggleEl = document.getElementById('charter-expand-toggle');
+    if (!toggleEl) return;
+    
+    const isChecked = toggleEl.checked;
+    localStorage.setItem('showCharterDetails', isChecked);
+    
+    document.querySelectorAll('.charter-details').forEach(d => {
+        d.open = isChecked;
+    });
+}
+window.toggleCharterDetails = toggleCharterDetails;
 
 window.addEventListener('hashchange', () => {
     const tab = window.location.hash.replace('#', '') || 'overview';
