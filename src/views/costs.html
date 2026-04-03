@@ -7,194 +7,199 @@
 </head>
 
 <body>
-    <div class="grid grid-cols-1 gap-6 mb-6">
-        <!-- Accommodations Section: 輕量化緊湊樣式 -->
-        <div class="bg-white rounded-2xl shadow-sm border border-slate-100 overflow-hidden">
-            <div class="bg-indigo-50 px-6 py-4 border-b border-indigo-100 flex items-center">
-                <i class="fa-solid fa-bed text-indigo-600 text-xl mr-3"></i>
-                <h2 class="text-xl font-bold text-slate-800">🏨 舒心下榻：旅程住宿配置與預算全覽</h2>
+    <div class="grid grid-cols-1 gap-6 mb-8">
+        <!-- Accommodations Section: 旗艦精華樣式 -->
+        <div class="bg-white rounded-3xl shadow-sm border border-slate-100 overflow-hidden">
+            <div class="px-6 py-5 border-b border-slate-50 flex items-center justify-between bg-white">
+                <div class="flex items-center">
+                    <div class="bg-indigo-100/50 w-10 h-10 rounded-full flex items-center justify-center mr-3">
+                        <i class="fa-solid fa-bed text-indigo-600"></i>
+                    </div>
+                    <h2 class="text-xl font-black text-indigo-950 tracking-tight">舒心下榻<span class="ml-2 text-sm font-medium text-slate-400">旅程住宿配置與預算全覽</span></h2>
+                </div>
             </div>
-            <div class="flex flex-col divide-y divide-slate-100">
+            
+            <div class="flex flex-col divide-y divide-slate-50">
                 <!-- Day 1 -->
-                <div class="flex justify-between items-center p-4 md:p-5 hover:bg-slate-50 transition-colors">
-                    <div class="flex items-baseline">
-                        <span class="text-highlight-amber">Day 1</span>
+                <div class="flex flex-col md:flex-row md:items-center justify-between p-3 md:p-4 hover:bg-indigo-50/30 transition-all group">
+                    <div class="flex items-start md:items-center gap-4 mb-2 md:mb-0">
+                        <span class="w-16 shrink-0 text-amber-600 font-mono font-black text-[12px] tracking-tighter bg-amber-50 px-2 py-1 rounded-md text-center">DAY 1</span>
                         <div class="flex flex-wrap items-center gap-2">
-                            <h4 class="font-bold text-indigo-900 text-sm md:text-base">Holiday Inn Express Pattaya
-                                Central</h4>
-                            <div class="flex items-center gap-1 flex-wrap">
-                                <span
-                                    class="text-[10px] px-1.5 py-0.5 rounded bg-slate-100 text-slate-500 flex items-center font-medium"><i
-                                        class="fa-solid fa-location-dot mr-1 text-[8px]"></i>芭達亞</span>
-                                <span class="text-highlight-amber">含早餐</span>
-                            </div>
+                            <h4 class="font-bold text-slate-800 text-base group-hover:text-indigo-900 transition-colors">Holiday Inn Express Pattaya Central</h4>
+                            <a href="https://www.google.com/maps/search/?api=1&query=Holiday+Inn+Express+Pattaya+Central" target="_blank" class="inline-flex items-center text-[10px] px-1.5 py-0.2 rounded-full bg-slate-100 text-slate-500 font-medium hover:bg-slate-200 hover:text-indigo-600 transition-all"><i class="fa-solid fa-location-dot mr-1 opacity-60"></i>芭達亞</a>
+                            <span class="text-[10px] font-bold text-amber-600 border border-amber-200 px-1.5 rounded uppercase bg-amber-50/50">含早餐</span>
                         </div>
                     </div>
-                    <div class="text-right shrink-0">
-                        <strong class="text-slate-800 block text-base md:text-lg">約 $1,900</strong>
-                        <span class="text-[10px] text-slate-400 block tracking-tight">每房每晚</span>
+                    <div class="flex flex-row md:flex-col items-center md:items-end justify-between md:justify-center border-t md:border-0 border-slate-50 pt-2 md:pt-0">
+                        <div class="flex items-baseline gap-1">
+                            <span class="text-[10px] text-slate-400 font-medium">約</span>
+                            <strong class="text-indigo-950 text-lg font-black">$1,900</strong>
+                        </div>
+                        <span class="text-[9px] text-slate-400 font-medium bg-slate-50 px-1.5 py-0.2 rounded-full mt-0.5">每房每晚</span>
                     </div>
                 </div>
 
-                <!-- Day 2~4 -->
-                <div class="flex justify-between items-center p-4 md:p-5 hover:bg-slate-50 transition-colors">
-                    <div class="flex items-baseline">
-                        <span class="text-highlight-amber">Day 2-4</span>
+                <!-- Day 2-4 -->
+                <div class="flex flex-col md:flex-row md:items-center justify-between p-3 md:p-4 hover:bg-indigo-50/30 transition-all group">
+                    <div class="flex items-start md:items-center gap-4 mb-2 md:mb-0">
+                        <span class="w-16 shrink-0 text-amber-600 font-mono font-black text-[12px] tracking-tighter bg-amber-50 px-2 py-1 rounded-md text-center">DAY 2-4</span>
                         <div class="flex flex-wrap items-center gap-2">
-                            <h4 class="font-bold text-indigo-900 text-sm md:text-base">Shama Yen-Akat Bangkok</h4>
-                            <div class="flex items-center gap-1 flex-wrap">
-                                <span
-                                    class="text-[10px] px-1.5 py-0.5 rounded bg-slate-100 text-slate-500 flex items-center font-medium"><i
-                                        class="fa-solid fa-location-dot mr-1 text-[8px]"></i>曼谷</span>
-                                <span
-                                    class="text-[10px] px-1.5 py-0.5 rounded bg-slate-100 text-slate-400 font-medium">不含早餐</span>
-                            </div>
+                            <h4 class="font-bold text-slate-800 text-base group-hover:text-indigo-900 transition-colors">Shama Yen-Akat Bangkok</h4>
+                            <a href="https://www.google.com/maps/search/?api=1&query=Shama+Yen-Akat+Bangkok" target="_blank" class="inline-flex items-center text-[10px] px-1.5 py-0.2 rounded-full bg-slate-100 text-slate-500 font-medium hover:bg-slate-200 hover:text-indigo-600 transition-all"><i class="fa-solid fa-location-dot mr-1 opacity-60"></i>曼谷</a>
+                            <span class="text-[10px] font-bold text-slate-400 border border-slate-200 px-1.5 rounded uppercase">不含早餐</span>
                         </div>
                     </div>
-                    <div class="text-right shrink-0">
-                        <strong class="text-slate-800 block text-base md:text-lg">約 $2,000</strong>
-                        <span class="text-[10px] text-slate-400 block tracking-tight">每房每晚 (三晚總計 $5,792)</span>
+                    <div class="flex flex-row md:flex-col items-center md:items-end justify-between md:justify-center border-t md:border-0 border-slate-50 pt-2 md:pt-0">
+                        <div class="flex items-baseline gap-1">
+                            <span class="text-[10px] text-slate-400 font-medium">約</span>
+                            <strong class="text-indigo-950 text-lg font-black">$2,000</strong>
+                        </div>
+                        <span class="text-[9px] text-slate-400 font-medium bg-slate-50 px-1.5 py-0.2 rounded-full mt-0.5">每晚 (三晚 $5,792)</span>
                     </div>
                 </div>
 
                 <!-- Day 5 -->
-                <div class="flex justify-between items-center p-4 md:p-5 hover:bg-slate-50 transition-colors">
-                    <div class="flex items-baseline">
-                        <span class="text-highlight-amber">Day 5</span>
-                        <div class="flex flex-col space-y-2">
+                <div class="flex flex-col md:flex-row md:items-center justify-between p-3 md:p-4 hover:bg-indigo-50/30 transition-all group">
+                    <div class="flex items-start md:items-center gap-4 mb-2 md:mb-0">
+                        <span class="w-16 shrink-0 text-amber-600 font-mono font-black text-[12px] tracking-tighter bg-amber-50 px-2 py-1 rounded-md text-center">DAY 5</span>
+                        <div class="flex flex-col space-y-3">
                             <div class="flex flex-wrap items-center gap-2">
-                                <h4 class="font-bold text-indigo-900 text-sm md:text-base">Por Kotchasarn</h4>
-                                <span
-                                    class="text-[10px] px-1.5 py-0.5 rounded bg-slate-100 text-slate-500 flex items-center font-medium"><i
-                                        class="fa-solid fa-location-dot mr-1 text-[8px]"></i>清邁市區</span>
+                                <h4 class="font-bold text-slate-800 text-base group-hover:text-indigo-900 transition-colors">Por Kotchasarn</h4>
+                                <a href="https://www.google.com/maps/search/?api=1&query=Por+Kotchasarn+Chiang+Mai" target="_blank" class="inline-flex items-center text-[10px] px-1.5 py-0.5 rounded-full bg-slate-100 text-slate-500 font-medium hover:bg-slate-200 hover:text-indigo-600 transition-all"><i class="fa-solid fa-location-dot mr-1 opacity-60"></i>清邁市區</a>
                             </div>
                             <div class="flex flex-wrap items-center gap-2">
-                                <h4 class="font-bold text-indigo-900 text-sm md:text-base">BED Changkian</h4>
-                                <span
-                                    class="text-[10px] px-1.5 py-0.5 rounded bg-slate-100 text-slate-500 flex items-center font-medium"><i
-                                        class="fa-solid fa-location-dot mr-1 text-[8px]"></i>清邁市區</span>
+                                <h4 class="font-bold text-slate-800 text-base group-hover:text-indigo-900 transition-colors">BED Changkian</h4>
+                                <a href="https://www.google.com/maps/search/?api=1&query=BED+Changkian+Chiang+Mai" target="_blank" class="inline-flex items-center text-[10px] px-1.5 py-0.5 rounded-full bg-slate-100 text-slate-500 font-medium hover:bg-slate-200 hover:text-indigo-600 transition-all"><i class="fa-solid fa-location-dot mr-1 opacity-60"></i>清邁市區</a>
+                                <span class="text-[10px] font-bold text-amber-600 border border-amber-200 px-1.5 rounded uppercase bg-amber-50/50">含早餐</span>
                             </div>
                         </div>
                     </div>
-                    <div class="text-right shrink-0 flex flex-col justify-center space-y-2">
-                        <div>
-                            <strong class="text-slate-800 block text-base md:text-lg">約 $2,750</strong>
-                            <span class="text-[9px] text-slate-400 block tracking-tight">每房每晚</span>
+                    <div class="flex flex-row md:flex-col items-center md:items-end justify-between md:justify-center border-t md:border-0 border-slate-50 pt-2 md:pt-0 space-y-3 md:space-y-3">
+                        <div class="flex flex-col items-end">
+                            <div class="flex items-baseline gap-1">
+                                <span class="text-[10px] text-slate-400 font-medium">約</span>
+                                <strong class="text-indigo-950 text-base font-black">$2,750</strong>
+                            </div>
+                            <span class="text-[8px] text-slate-400 font-medium uppercase px-1">每房每晚</span>
                         </div>
-                        <div>
-                            <strong class="text-slate-800 block text-base md:text-lg">約 $1,600</strong>
-                            <span class="text-[9px] text-slate-400 block tracking-tight">每房每晚</span>
+                        <div class="flex flex-col items-end border-t md:border-0 border-slate-50 pt-1.5 md:pt-0">
+                            <div class="flex items-baseline gap-1">
+                                <span class="text-[10px] text-slate-400 font-medium">約</span>
+                                <strong class="text-indigo-950 text-base font-black">$1,600</strong>
+                            </div>
+                            <span class="text-[8px] text-slate-400 font-medium uppercase px-1">每房每晚</span>
                         </div>
                     </div>
                 </div>
 
                 <!-- Day 6 -->
-                <div class="flex justify-between items-center p-4 md:p-5 hover:bg-slate-50 transition-colors">
-                    <div class="flex items-baseline">
-                        <span class="text-highlight-amber">Day 6</span>
-                        <div class="flex flex-col space-y-2">
+                <div class="flex flex-col md:flex-row md:items-center justify-between p-3 md:p-4 hover:bg-indigo-50/30 transition-all group">
+                    <div class="flex items-start md:items-center gap-4 mb-2 md:mb-0">
+                        <span class="w-16 shrink-0 text-amber-600 font-mono font-black text-[12px] tracking-tighter bg-amber-50 px-2 py-1 rounded-md text-center">DAY 6</span>
+                        <div class="flex flex-col space-y-3">
                             <div class="flex flex-wrap items-center gap-2">
-                                <h4 class="font-bold text-indigo-900 text-sm md:text-base">La Lanna 拉蘭納</h4>
-                                <div class="flex items-center gap-1 flex-wrap">
-                                    <span
-                                        class="text-[10px] px-1.5 py-0.5 rounded bg-slate-100 text-slate-500 flex items-center font-medium"><i
-                                            class="fa-solid fa-location-dot mr-1 text-[8px]"></i>清邁山區</span>
-                                    <span class="text-highlight-amber">4人
-                                        Villa</span>
-                                </div>
+                                <h4 class="font-bold text-slate-800 text-base group-hover:text-indigo-900 transition-colors">La Lanna 拉蘭納</h4>
+                                <a href="https://maps.app.goo.gl/Lvn5Nt8JhnUxz2QdA" target="_blank" class="inline-flex items-center text-[10px] px-1.5 py-0.5 rounded-full bg-slate-100 text-slate-500 font-medium hover:bg-slate-200 hover:text-indigo-600 transition-all"><i class="fa-solid fa-location-dot mr-1 opacity-60"></i>清邁山區</a>
+                                <span class="text-[10px] font-black text-indigo-500 border border-indigo-100 px-1.5 rounded bg-indigo-50/50 uppercase">4人 VILLA</span>
                             </div>
                             <div class="flex flex-wrap items-center gap-2">
-                                <h4 class="font-bold text-indigo-900 text-sm md:text-base">BED Changkian</h4>
-                                <span
-                                    class="text-[10px] px-1.5 py-0.5 rounded bg-slate-100 text-slate-500 flex items-center font-medium"><i
-                                        class="fa-solid fa-location-dot mr-1 text-[8px]"></i>清邁市區</span>
+                                <h4 class="font-bold text-slate-800 text-base group-hover:text-indigo-900 transition-colors">BED Changkian</h4>
+                                <a href="https://www.google.com/maps/search/?api=1&query=BED+Changkian+Chiang+Mai" target="_blank" class="inline-flex items-center text-[10px] px-1.5 py-0.5 rounded-full bg-slate-100 text-slate-500 font-medium hover:bg-slate-200 hover:text-indigo-600 transition-all"><i class="fa-solid fa-location-dot mr-1 opacity-60"></i>清邁市區</a>
+                                <span class="text-[10px] font-bold text-amber-600 border border-amber-200 px-1.5 rounded bg-amber-50/50 uppercase">含早餐</span>
                             </div>
                         </div>
                     </div>
-                    <div class="text-right shrink-0 flex flex-col justify-center space-y-2">
-                        <div>
-                            <strong class="text-slate-800 block text-base md:text-lg">$17,280</strong>
-                            <span class="text-[9px] text-slate-400 block tracking-tight">4人均分</span>
+                    <div class="flex flex-row md:flex-col items-center md:items-end justify-between md:justify-center border-t md:border-0 border-slate-50 pt-2 md:pt-0 space-y-3 md:space-y-3">
+                        <div class="flex flex-col items-end">
+                            <strong class="text-indigo-950 text-base font-black">$17,280</strong>
+                            <span class="text-[8px] text-rose-500 font-bold px-1">4人均分</span>
                         </div>
-                        <div>
-                            <strong class="text-slate-800 block text-base md:text-lg">約 $1,600</strong>
-                            <span class="text-[9px] text-slate-400 block tracking-tight">每房每晚</span>
+                        <div class="flex flex-col items-end border-t md:border-0 border-slate-50 pt-1.5 md:pt-0">
+                            <div class="flex items-baseline gap-1">
+                                <span class="text-[10px] text-slate-400 font-medium">約</span>
+                                <strong class="text-indigo-950 text-base font-black">$1,600</strong>
+                            </div>
+                            <span class="text-[8px] text-slate-400 font-medium uppercase px-1">每房每晚</span>
                         </div>
                     </div>
                 </div>
 
                 <!-- Day 7 -->
-                <div class="flex justify-between items-center p-4 md:p-5 hover:bg-slate-50 transition-colors">
-                    <div class="flex items-baseline">
-                        <span class="text-highlight-amber">Day 7</span>
+                <div class="flex flex-col md:flex-row md:items-center justify-between p-3 md:p-4 hover:bg-indigo-50/30 transition-all group">
+                    <div class="flex items-start md:items-center gap-4 mb-2 md:mb-0">
+                        <span class="w-16 shrink-0 text-amber-600 font-mono font-black text-[12px] tracking-tighter bg-amber-50 px-2 py-1 rounded-md text-center">DAY 7</span>
                         <div class="flex flex-wrap items-center gap-2">
-                            <h4 class="font-bold text-indigo-900 text-sm md:text-base">BED Changkian</h4>
-                            <span
-                                class="text-[10px] px-1.5 py-0.5 rounded bg-slate-100 text-slate-500 flex items-center font-medium"><i
-                                    class="fa-solid fa-location-dot mr-1 text-[8px]"></i>清邁市區</span>
-                            <span class="text-highlight-amber">含早餐</span>
+                            <h4 class="font-bold text-slate-800 text-base group-hover:text-indigo-900 transition-colors">BED Changkian</h4>
+                            <a href="https://www.google.com/maps/search/?api=1&query=BED+Changkian+Chiang+Mai" target="_blank" class="inline-flex items-center text-[10px] px-1.5 py-0.2 rounded-full bg-slate-100 text-slate-500 font-medium hover:bg-slate-200 hover:text-indigo-600 transition-all"><i class="fa-solid fa-location-dot mr-1 opacity-60"></i>清邁市區</a>
+                            <span class="text-[10px] font-bold text-amber-600 border border-amber-200 px-1.5 rounded uppercase bg-amber-50/50">含早餐</span>
                         </div>
                     </div>
-                    <div class="text-right shrink-0">
-                        <strong class="text-slate-800 block text-base md:text-lg">約 $1,560</strong>
-                        <span class="text-[10px] text-slate-400 block tracking-tight">每房每晚</span>
+                    <div class="flex flex-row md:flex-col items-center md:items-end justify-between md:justify-center border-t md:border-0 border-slate-50 pt-2 md:pt-0">
+                        <div class="flex items-baseline gap-1">
+                            <span class="text-[10px] text-slate-400 font-medium">約</span>
+                            <strong class="text-indigo-950 text-lg font-black">$1,600</strong>
+                        </div>
+                        <span class="text-[9px] text-slate-400 font-medium bg-slate-50 px-1.5 py-0.2 rounded-full mt-0.5">每房每晚</span>
                     </div>
                 </div>
 
                 <!-- Day 8 -->
-                <div class="flex justify-between items-center p-4 md:p-5 hover:bg-slate-50 transition-colors">
-                    <div class="flex items-baseline">
-                        <span class="text-highlight-amber">Day 8</span>
+                <div class="flex flex-col md:flex-row md:items-center justify-between p-3 md:p-4 hover:bg-indigo-50/30 transition-all group">
+                    <div class="flex items-start md:items-center gap-4 mb-2 md:mb-0">
+                        <span class="w-16 shrink-0 text-amber-600 font-mono font-black text-[12px] tracking-tighter bg-amber-50 px-2 py-1 rounded-md text-center">DAY 8</span>
                         <div class="flex flex-wrap items-center gap-2">
-                            <h4 class="font-bold text-indigo-900 text-sm md:text-base">Maikaew Damnoen Resort</h4>
-                            <div class="flex items-center gap-1 flex-wrap">
-                                <span
-                                    class="text-[10px] px-1.5 py-0.5 rounded bg-slate-100 text-slate-500 flex items-center font-medium"><i
-                                        class="fa-solid fa-location-dot mr-1 text-[8px]"></i>叻丕府</span>
-                                <span class="text-highlight-amber">含早餐</span>
-                            </div>
+                            <h4 class="font-bold text-slate-800 text-base group-hover:text-indigo-900 transition-colors">Maikaew Damnoen Resort</h4>
+                            <a href="https://www.google.com/maps/search/?api=1&query=Maikaew+Damnoen+Resort" target="_blank" class="inline-flex items-center text-[10px] px-1.5 py-0.2 rounded-full bg-slate-100 text-slate-500 font-medium hover:bg-slate-200 hover:text-indigo-600 transition-all"><i class="fa-solid fa-location-dot mr-1 opacity-60"></i>叻丕府</a>
+                            <span class="text-[10px] font-bold text-amber-600 border border-amber-200 px-1.5 rounded uppercase bg-amber-50/50">含早餐</span>
                         </div>
                     </div>
-                    <div class="text-right shrink-0">
-                        <strong class="text-slate-800 block text-base md:text-lg">約 $2,000</strong>
-                        <span class="text-[10px] text-slate-400 block tracking-tight">每房每晚</span>
+                    <div class="flex flex-row md:flex-col items-center md:items-end justify-between md:justify-center border-t md:border-0 border-slate-50 pt-2 md:pt-0">
+                        <div class="flex items-baseline gap-1">
+                            <span class="text-[10px] text-slate-400 font-medium">約</span>
+                            <strong class="text-indigo-950 text-lg font-black">$2,000</strong>
+                        </div>
+                        <span class="text-[9px] text-slate-400 font-medium bg-slate-50 px-1.5 py-0.2 rounded-full mt-0.5">每房每晚</span>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
         <!-- 🚗 交通費用總覽 -->
-        <div class="bg-white rounded-2xl shadow-sm border border-slate-100 overflow-hidden h-full flex flex-col">
-            <div class="bg-emerald-50 px-6 py-4 border-b border-emerald-100 flex items-center">
-                <i class="fa-solid fa-car text-emerald-600 text-xl mr-3"></i>
-                <h2 class="text-xl font-bold text-slate-800">🚗 尊榮移動：跨城包車與區域交通概要</h2>
+        <div class="bg-white rounded-3xl shadow-sm border border-slate-100 overflow-hidden flex flex-col h-full">
+            <div class="px-6 py-5 border-b border-slate-50 flex items-center bg-white">
+                <div class="bg-emerald-100/50 w-10 h-10 rounded-full flex items-center justify-center mr-3">
+                    <i class="fa-solid fa-car text-emerald-600"></i>
+                </div>
+                <h2 class="text-xl font-black text-indigo-950 tracking-tight">尊榮移動<span class="ml-2 text-sm font-medium text-slate-400">跨城包車與區域交通概要</span></h2>
             </div>
-            <div class="p-5 md:p-6 text-slate-700 flex-1 bg-slate-50/30">
+            <div class="p-5 md:p-6 text-slate-700 bg-white">
 
                 <!-- 機票區塊 -->
-                <div class="mb-6">
-                    <h3
-                        class="font-bold text-emerald-800 mb-3 flex items-center bg-emerald-100/50 px-3 py-1.5 rounded-lg w-max">
-                        <i class="fa-solid fa-plane-departure mr-2 text-emerald-600 text-sm"></i> 國際與國內段機票
+                <div class="mb-8">
+                    <h3 class="text-[11px] font-black text-emerald-700 uppercase tracking-[0.2em] mb-4 flex items-center">
+                        <span class="w-8 h-[1px] bg-emerald-200 mr-2"></span>國際與國內段機票
                     </h3>
-                    <div class="bg-white rounded-xl border border-slate-200 overflow-hidden">
-                        <div
-                            class="flex justify-between items-center p-3 border-b border-slate-100 hover:bg-slate-50 transition-colors">
-                            <span class="text-sm font-medium"><i class="fa-solid fa-plane text-slate-300 mr-2"></i>高雄 ↔
-                                曼谷 (國泰)</span>
+                    <div class="grid grid-cols-1 gap-3">
+                        <div class="flex justify-between items-center p-4 rounded-2xl bg-slate-50 border border-slate-100 group hover:border-emerald-200 transition-colors">
+                            <div class="flex flex-col">
+                                <span class="text-sm font-bold text-slate-700">高雄 ↔ 曼谷</span>
+                                <span class="text-[10px] text-slate-400 font-medium">國泰航空來回</span>
+                            </div>
                             <div class="text-right">
-                                <strong class="text-slate-800 block">約 $13,000</strong>
-                                <span class="text-[10px] text-slate-400 block tracking-tight">每人來回預估</span>
+                                <strong class="text-indigo-950 text-base md:text-lg font-black">$13,000</strong>
+                                <span class="text-[9px] text-slate-400 block font-bold">每人預估</span>
                             </div>
                         </div>
-                        <div class="flex justify-between items-center p-3 hover:bg-slate-50 transition-colors">
-                            <span class="text-sm font-medium"><i class="fa-solid fa-plane text-slate-300 mr-2"></i>曼谷 ↔
-                                清邁 (曼航)</span>
+                        <div class="flex justify-between items-center p-4 rounded-2xl bg-slate-50 border border-slate-100 group hover:border-emerald-200 transition-colors">
+                            <div class="flex flex-col">
+                                <span class="text-sm font-bold text-slate-700">曼谷 ↔ 清邁</span>
+                                <span class="text-[10px] text-slate-400 font-medium">曼谷航空國內段</span>
+                            </div>
                             <div class="text-right">
-                                <strong class="text-slate-800 block">約 $10,000</strong>
-                                <span class="text-[10px] text-slate-400 block tracking-tight">每人來回預估</span>
+                                <strong class="text-indigo-950 text-base md:text-lg font-black">$10,000</strong>
+                                <span class="text-[9px] text-slate-400 block font-bold">每人預估</span>
                             </div>
                         </div>
                     </div>
@@ -202,422 +207,390 @@
 
                 <!-- 包車區塊 -->
                 <div>
-                    <div class="flex items-center justify-between mb-3">
-                        <h3
-                            class="font-bold text-emerald-800 flex items-center bg-emerald-100/50 px-3 py-1.5 rounded-lg w-max">
-                            <i class="fa-solid fa-van-shuttle mr-2 text-emerald-600 text-sm"></i> 包車與市區交通
+                    <div class="flex items-center justify-between mb-4">
+                        <h3 class="text-[11px] font-black text-emerald-700 uppercase tracking-[0.2em] flex items-center">
+                            <span class="w-8 h-[1px] bg-emerald-200 mr-2"></span>包車與市區交通
                         </h3>
                         <label class="inline-flex items-center cursor-pointer group">
-                            <input type="checkbox" id="charter-expand-toggle" class="sr-only peer"
-                                onchange="toggleCharterDetails()">
-                            <div
-                                class="relative w-9 h-5 bg-slate-200 rounded-full peer peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-slate-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-emerald-500">
-                            </div>
-                            <span
-                                class="ms-2 text-[10px] font-medium text-slate-500 group-hover:text-emerald-600 transition-colors">全部展開</span>
+                            <input type="checkbox" id="charter-expand-toggle" class="sr-only peer" onchange="toggleCharterDetails()">
+                            <div class="relative w-8 h-4 bg-slate-200 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-slate-300 after:border after:rounded-full after:h-3 after:w-3 after:transition-all peer-checked:bg-emerald-500"></div>
+                            <span class="ms-2 text-[10px] font-bold text-slate-400 group-hover:text-emerald-600 transition-colors uppercase tracking-tighter">全部展開</span>
                         </label>
                     </div>
 
-                    <div class="bg-white rounded-xl border border-slate-200 overflow-hidden flex flex-col text-sm"
-                        id="charter-list">
+                    <div class="divide-y divide-slate-50 border-t border-slate-50" id="charter-list">
                         <!-- Day 1 -->
-                        <details class="charter-details group border-b border-slate-100 last:border-0">
-                            <summary
-                                class="flex justify-between items-center p-3 cursor-pointer hover:bg-slate-50 transition-colors list-none [&::-webkit-details-marker]:hidden">
-                                <div class="flex items-center">
-                                    <i
-                                        class="fa-solid fa-chevron-down text-slate-300 mr-3 text-xs group-open:rotate-180 transition-transform"></i>
-                                    <span class="text-highlight-amber">Day 1 接機 <span
-                                            class="text-[10px] font-normal text-slate-400 ml-1">至芭達亞</span></span>
+                        <details class="charter-details group">
+                            <summary class="flex justify-between items-center py-4 cursor-pointer hover:bg-slate-50/50 transition-all list-none group">
+                                <div class="flex items-center gap-3">
+                                    <span class="w-12 text-center text-[10px] font-black bg-emerald-50 text-emerald-700 py-1 rounded">D1</span>
+                                    <div class="flex flex-col">
+                                        <span class="text-sm font-bold text-slate-700 group-hover:text-indigo-900 transition-colors">機場面對面接機</span>
+                                        <span class="text-[10px] text-slate-400 font-medium">BKK機場 ➔ 芭達亞</span>
+                                    </div>
                                 </div>
-                                <div class="text-right">
-                                    <strong class="text-slate-800 block">$2,900</strong>
-                                    <span class="text-[10px] text-slate-400 block tracking-tight">8人均分</span>
+                                <div class="flex items-center gap-4">
+                                    <div class="text-right">
+                                        <strong class="text-indigo-950 font-black text-base">$2,900</strong>
+                                        <span class="text-[9px] text-rose-500 font-bold block">8人均分</span>
+                                    </div>
+                                    <i class="fa-solid fa-chevron-down text-[10px] text-slate-300 group-open:rotate-180 transition-transform px-2"></i>
                                 </div>
                             </summary>
-                            <div
-                                class="px-9 pb-3 pt-1 bg-slate-50/50 text-xs text-slate-600 space-y-1.5 border-t border-slate-100">
-                                <div class="flex justify-between"><span>單程包車</span><span>$2,800</span></div>
-                                <div class="flex justify-between"><span>舉牌費</span><span>$100</span></div>
+                            <div class="pl-16 pr-5 pb-4 space-y-2 text-xs text-slate-500">
+                                <div class="flex justify-between"><span>豪華專車單程包車</span><span class="font-mono">$2,800</span></div>
+                                <div class="flex justify-between"><span>機場代辦舉牌費</span><span class="font-mono">$100</span></div>
                             </div>
                         </details>
 
                         <!-- Day 2 -->
-                        <details class="charter-details group border-b border-slate-100 last:border-0">
-                            <summary
-                                class="flex justify-between items-center p-3 cursor-pointer hover:bg-slate-50 transition-colors list-none [&::-webkit-details-marker]:hidden">
-                                <div class="flex items-center">
-                                    <i
-                                        class="fa-solid fa-chevron-down text-slate-300 mr-3 text-xs group-open:rotate-180 transition-transform"></i>
-                                    <span class="text-highlight-amber">Day 2 芭達亞 <span
-                                            class="text-[10px] font-normal text-slate-400 ml-1">一日遊</span></span>
+                        <details class="charter-details group">
+                            <summary class="flex justify-between items-center py-4 cursor-pointer hover:bg-slate-50/50 transition-all list-none">
+                                <div class="flex items-center gap-3">
+                                    <span class="w-12 text-center text-[10px] font-black bg-emerald-50 text-emerald-700 py-1 rounded">D2</span>
+                                    <div class="flex flex-col">
+                                        <span class="text-sm font-bold text-slate-700">芭達亞經典探索</span>
+                                        <span class="text-[10px] text-slate-400 font-medium">真理聖殿/成人秀/曼谷飯店</span>
+                                    </div>
                                 </div>
-                                <div class="text-right">
-                                    <strong class="text-slate-800 block">$5,500</strong>
-                                    <span class="text-[10px] text-slate-400 block tracking-tight">8人均分</span>
+                                <div class="flex items-center gap-4">
+                                    <div class="text-right">
+                                        <strong class="text-indigo-950 font-black text-base">$5,500</strong>
+                                        <span class="text-[9px] text-rose-500 font-bold block">8人均分</span>
+                                    </div>
+                                    <i class="fa-solid fa-chevron-down text-[10px] text-slate-300 group-open:rotate-180 transition-transform px-2"></i>
                                 </div>
                             </summary>
-                            <div
-                                class="px-9 pb-3 pt-1 bg-slate-50/50 text-xs text-slate-600 space-y-1.5 border-t border-slate-100">
-                                <div class="flex justify-between"><span>10H包車</span><span>$4,800</span></div>
-                                <div class="flex justify-between"><span>預計超時 (2H)</span><span>$600</span></div>
-                                <div class="flex justify-between"><span>司機小費</span><span>$100</span></div>
+                            <div class="pl-16 pr-5 pb-4 space-y-2 text-xs text-slate-500">
+                                <div class="flex justify-between"><span>10H 包車服務</span><span class="font-mono">$4,800</span></div>
+                                <div class="flex justify-between"><span>預計超時費 (2H)</span><span class="font-mono">$600</span></div>
+                                <div class="flex justify-between"><span>司機服務小費</span><span class="font-mono">$100</span></div>
                             </div>
                         </details>
 
                         <!-- Day 3 -->
-                        <details class="charter-details group border-b border-slate-100 last:border-0">
-                            <summary
-                                class="flex justify-between items-center p-3 cursor-pointer hover:bg-slate-50 transition-colors list-none [&::-webkit-details-marker]:hidden">
-                                <div class="flex items-center">
-                                    <i
-                                        class="fa-solid fa-chevron-down text-slate-300 mr-3 text-xs group-open:rotate-180 transition-transform"></i>
-                                    <span class="text-highlight-amber">Day 3 大城 <span
-                                            class="text-[10px] font-normal text-slate-400 ml-1">一日遊</span></span>
+                        <details class="charter-details group">
+                            <summary class="flex justify-between items-center py-4 cursor-pointer hover:bg-slate-50/50 transition-all list-none">
+                                <div class="flex items-center gap-3">
+                                    <span class="w-12 text-center text-[10px] font-black bg-emerald-50 text-emerald-700 py-1 rounded">D3</span>
+                                    <div class="flex flex-col">
+                                        <span class="text-sm font-bold text-slate-700">大城古文明之巔</span>
+                                        <span class="text-[10px] text-slate-400 font-medium">野生動物園/古蹟佛寺</span>
+                                    </div>
                                 </div>
-                                <div class="text-right">
-                                    <strong class="text-slate-800 block">$5,500</strong>
-                                    <span class="text-[10px] text-slate-400 block tracking-tight">9人均分</span>
+                                <div class="flex items-center gap-4">
+                                    <div class="text-right">
+                                        <strong class="text-indigo-950 font-black text-base">$5,500</strong>
+                                        <span class="text-[9px] text-rose-500 font-bold block">9人均分</span>
+                                    </div>
+                                    <i class="fa-solid fa-chevron-down text-[10px] text-slate-300 group-open:rotate-180 transition-transform px-2"></i>
                                 </div>
                             </summary>
-                            <div
-                                class="px-9 pb-3 pt-1 bg-slate-50/50 text-xs text-slate-600 space-y-1.5 border-t border-slate-100">
-                                <div class="flex justify-between"><span>10H包車</span><span>$4,500</span></div>
-                                <div class="flex justify-between"><span>預計超時 (3H)</span><span>$900</span></div>
-                                <div class="flex justify-between"><span>司機小費</span><span>$100</span></div>
+                            <div class="pl-16 pr-5 pb-4 space-y-2 text-xs text-slate-500">
+                                <div class="flex justify-between"><span>10H 包車服務</span><span class="font-mono">$4,500</span></div>
+                                <div class="flex justify-between"><span>預計超時 (3H)</span><span class="font-mono">$900</span></div>
+                                <div class="flex justify-between"><span>司機服務小費</span><span class="font-mono">$100</span></div>
                             </div>
                         </details>
 
                         <!-- Day 4 -->
-                        <details class="charter-details group border-b border-slate-100 last:border-0">
-                            <summary
-                                class="flex justify-between items-center p-3 cursor-pointer hover:bg-slate-50 transition-colors list-none [&::-webkit-details-marker]:hidden">
-                                <div class="flex items-center">
-                                    <i
-                                        class="fa-solid fa-chevron-down text-slate-300 mr-3 text-xs group-open:rotate-180 transition-transform"></i>
-                                    <span class="text-highlight-amber">Day 4 曼谷市區 <span
-                                            class="text-[10px] font-normal text-slate-400 ml-1">移動預算</span></span>
+                        <details class="charter-details group">
+                            <summary class="flex justify-between items-center py-4 cursor-pointer hover:bg-slate-50/50 transition-all list-none group">
+                                <div class="flex items-center gap-3">
+                                    <span class="w-12 text-center text-[10px] font-black bg-slate-100 text-slate-400 py-1 rounded">D4</span>
+                                    <div class="flex flex-col">
+                                        <span class="text-sm font-bold text-slate-700 group-hover:text-indigo-900 transition-colors">曼谷市區彈性移動</span>
+                                        <span class="text-[10px] text-slate-400 font-medium">Grab / Taxi 預算</span>
+                                    </div>
                                 </div>
-                                <div class="text-right">
-                                    <strong class="text-slate-800 block">約 $600</strong>
-                                    <span class="text-[10px] text-slate-400 block tracking-tight">每人預估</span>
+                                <div class="flex items-center gap-4">
+                                    <div class="text-right">
+                                        <strong class="text-indigo-950 font-black text-base">約 $600</strong>
+                                        <span class="text-[9px] text-slate-400 font-bold block italic">每人預估</span>
+                                    </div>
+                                    <i class="fa-solid fa-chevron-down text-[10px] text-slate-300 group-open:rotate-180 transition-transform px-2"></i>
                                 </div>
                             </summary>
-                            <div
-                                class="px-9 pb-3 pt-1 bg-slate-50/50 text-xs text-slate-600 space-y-1.5 border-t border-slate-100">
-                                <div class="flex justify-between"><span>市區移動 (Grab/Taxi)</span><span>依實際分攤</span></div>
+                            <div class="pl-16 pr-5 pb-4 space-y-2 text-xs text-slate-500">
+                                <div class="flex justify-between"><span>市區移動總預算</span><span class="font-mono">依實際人數分攤</span></div>
                             </div>
                         </details>
 
                         <!-- Day 5 -->
-                        <details class="charter-details group border-b border-slate-100 last:border-0">
-                            <summary
-                                class="flex justify-between items-center p-3 cursor-pointer hover:bg-slate-50 transition-colors list-none [&::-webkit-details-marker]:hidden">
-                                <div class="flex items-center">
-                                    <i
-                                        class="fa-solid fa-chevron-down text-slate-300 mr-3 text-xs group-open:rotate-180 transition-transform"></i>
-                                    <span class="text-highlight-amber">Day 5 雙城移動 <span
-                                            class="text-[10px] font-normal text-slate-400 ml-1">機場接駁</span></span>
+                        <details class="charter-details group">
+                            <summary class="flex justify-between items-center py-4 cursor-pointer hover:bg-slate-50/50 transition-all list-none">
+                                <div class="flex items-center gap-3">
+                                    <span class="w-12 text-center text-[10px] font-black bg-emerald-50 text-emerald-700 py-1 rounded">D5</span>
+                                    <div class="flex flex-col">
+                                        <span class="text-sm font-bold text-slate-700">跨城機場接駁</span>
+                                        <span class="text-[10px] text-slate-400 font-medium">曼谷 ➔ 清邁 (含行李加購)</span>
+                                    </div>
                                 </div>
-                                <div class="text-right">
-                                    <strong class="text-slate-800 block">$2,700</strong>
-                                    <span class="text-[10px] text-slate-400 block tracking-tight">9人均分</span>
+                                <div class="flex items-center gap-4">
+                                    <div class="text-right">
+                                        <strong class="text-indigo-950 font-black text-base">$2,700</strong>
+                                        <span class="text-[9px] text-rose-500 font-bold block">9人均分</span>
+                                    </div>
+                                    <i class="fa-solid fa-chevron-down text-[10px] text-slate-300 group-open:rotate-180 transition-transform px-2"></i>
                                 </div>
                             </summary>
-                            <div
-                                class="px-9 pb-3 pt-1 bg-slate-50/50 text-xs text-slate-600 space-y-1.5 border-t border-slate-100">
-                                <div class="flex justify-between"><span>曼谷市區 ➔ BKK機場 (單程包車)</span><span>$1,500</span>
-                                </div>
-                                <div class="flex justify-between"><span>曼谷市區 ➔ BKK機場 (行李加購)</span><span>$1,200</span>
-                                </div>
-                                <div class="flex justify-between"><span>清邁機場 ➔ 市區飯店 (Grab)</span><span>依實際分攤</span>
-                                </div>
+                            <div class="pl-16 pr-5 pb-4 space-y-2 text-xs text-slate-500">
+                                <div class="flex justify-between"><span>曼谷市區 ➔ 機場包車</span><span class="font-mono">$1,500</span></div>
+                                <div class="flex justify-between"><span>行李重量加購預算</span><span class="font-mono">$1,200</span></div>
+                                <div class="flex justify-between"><span>清邁接機 (Grab)</span><span class="font-mono text-[9px] uppercase">現場另計</span></div>
                             </div>
                         </details>
 
                         <!-- Day 6 -->
-                        <details class="charter-details group border-b border-slate-100 last:border-0">
-                            <summary
-                                class="flex justify-between items-center p-3 cursor-pointer hover:bg-slate-50 transition-colors list-none [&::-webkit-details-marker]:hidden">
-                                <div class="flex items-center">
-                                    <i
-                                        class="fa-solid fa-chevron-down text-slate-300 mr-3 text-xs group-open:rotate-180 transition-transform"></i>
-                                    <span class="text-highlight-amber">Day 6 山區單程 <span
-                                            class="text-[10px] font-normal text-slate-400 ml-1">往渡假村</span></span>
+                        <details class="charter-details group">
+                            <summary class="flex justify-between items-center py-4 cursor-pointer hover:bg-slate-50/50 transition-all list-none">
+                                <div class="flex items-center gap-3">
+                                    <span class="w-12 text-center text-[10px] font-black bg-emerald-50 text-emerald-700 py-1 rounded">D6</span>
+                                    <div class="flex flex-col">
+                                        <span class="text-sm font-bold text-slate-700 group-hover:text-indigo-900 transition-colors">清邁山區巡禮</span>
+                                        <span class="text-[10px] text-slate-400 font-medium">往 La Lanna 渡假村單程</span>
+                                    </div>
                                 </div>
-                                <div class="text-right">
-                                    <strong class="text-slate-800 block">$2,800</strong>
-                                    <span class="text-[10px] text-slate-400 block tracking-tight">8人均分</span>
+                                <div class="flex items-center gap-4">
+                                    <div class="text-right">
+                                        <strong class="text-indigo-950 font-black text-base">$2,800</strong>
+                                        <span class="text-[9px] text-rose-500 font-bold block">8人均分</span>
+                                    </div>
+                                    <i class="fa-solid fa-chevron-down text-[10px] text-slate-300 group-open:rotate-180 transition-transform px-2"></i>
                                 </div>
                             </summary>
-                            <div
-                                class="px-9 pb-3 pt-1 bg-slate-50/50 text-xs text-slate-600 space-y-1.5 border-t border-slate-100">
-                                <div class="flex justify-between"><span>單程包車接駁</span><span>$2,800</span></div>
-                                <div class="flex justify-between text-slate-400"><span>市區組機車租借</span><span>現場另計</span>
-                                </div>
+                            <div class="pl-16 pr-5 pb-4 space-y-2 text-xs text-slate-500">
+                                <div class="flex justify-between"><span>單程接駁包車費</span><span class="font-mono">$2,800</span></div>
+                                <div class="flex justify-between"><span>市區機車租借 (現場)</span><span class="font-mono text-[9px] uppercase">另計</span></div>
                             </div>
                         </details>
 
                         <!-- Day 7 -->
-                        <details class="charter-details group border-b border-slate-100 last:border-0">
-                            <summary
-                                class="flex justify-between items-center p-3 cursor-pointer hover:bg-slate-50 transition-colors list-none [&::-webkit-details-marker]:hidden">
-                                <div class="flex items-center">
-                                    <i
-                                        class="fa-solid fa-chevron-down text-slate-300 mr-3 text-xs group-open:rotate-180 transition-transform"></i>
-                                    <span class="text-highlight-amber">Day 7 清邁一日 <span
-                                            class="text-[10px] font-normal text-slate-400 ml-1">含送機</span></span>
+                        <details class="charter-details group">
+                            <summary class="flex justify-between items-center py-4 cursor-pointer hover:bg-slate-50/50 transition-all list-none">
+                                <div class="flex items-center gap-3">
+                                    <span class="w-12 text-center text-[10px] font-black bg-emerald-50 text-emerald-700 py-1 rounded">D7</span>
+                                    <div class="flex flex-col">
+                                        <span class="text-sm font-bold text-slate-700">清邁一日深度遊</span>
+                                        <span class="text-[10px] text-slate-400 font-medium">含夜間送機接駁</span>
+                                    </div>
                                 </div>
-                                <div class="text-right">
-                                    <strong class="text-slate-800 block">$6,200</strong>
-                                    <span class="text-[10px] text-slate-400 block tracking-tight">9人均分</span>
+                                <div class="flex items-center gap-4">
+                                    <div class="text-right">
+                                        <strong class="text-indigo-950 font-black text-base">$6,200</strong>
+                                        <span class="text-[9px] text-rose-500 font-bold block">9人均分</span>
+                                    </div>
+                                    <i class="fa-solid fa-chevron-down text-[10px] text-slate-300 group-open:rotate-180 transition-transform px-2"></i>
                                 </div>
                             </summary>
-                            <div
-                                class="px-9 pb-3 pt-1 bg-slate-50/50 text-xs text-slate-600 space-y-1.5 border-t border-slate-100">
-                                <div class="flex justify-between"><span>10H包車</span><span>$5,000</span></div>
-                                <div class="flex justify-between"><span>預計超時 (4H)</span><span>$1,200</span></div>
-                                <div class="flex justify-between font-medium"><span>司機小費</span><span>$100</span></div>
+                            <div class="pl-16 pr-5 pb-4 space-y-2 text-xs text-slate-500">
+                                <div class="flex justify-between"><span>10H 包車全日</span><span class="font-mono">$5,000</span></div>
+                                <div class="flex justify-between"><span>超時費 (4H 預估)</span><span class="font-mono">$1,200</span></div>
+                                <div class="flex justify-between"><span>司機服務小費</span><span class="font-mono">$100</span></div>
                             </div>
                         </details>
 
                         <!-- Day 8 -->
-                        <details class="charter-details group border-b border-slate-100 last:border-0">
-                            <summary
-                                class="flex justify-between items-center p-3 cursor-pointer hover:bg-slate-50 transition-colors list-none [&::-webkit-details-marker]:hidden">
-                                <div class="flex items-center">
-                                    <i
-                                        class="fa-solid fa-chevron-down text-slate-300 mr-3 text-xs group-open:rotate-180 transition-transform"></i>
-                                    <span class="text-highlight-amber">Day 8 雙城移動 <span
-                                            class="text-[10px] font-normal text-slate-400 ml-1">清邁/曼谷</span></span>
+                        <details class="charter-details group">
+                            <summary class="flex justify-between items-center py-4 cursor-pointer hover:bg-slate-50/50 transition-all list-none">
+                                <div class="flex items-center gap-3">
+                                    <span class="w-12 text-center text-[10px] font-black bg-emerald-50 text-emerald-700 py-1 rounded">D8</span>
+                                    <div class="flex flex-col">
+                                        <span class="text-sm font-bold text-slate-700">清邁/曼谷 雙邊接駁</span>
+                                        <span class="text-[10px] text-slate-400 font-medium">飯店➔清邁航 / 曼航➔叻丕府</span>
+                                    </div>
                                 </div>
-                                <div class="text-right space-y-1">
-                                    <div>
-                                        <strong class="text-slate-800 block text-sm">$4,000</strong>
-                                        <span class="text-[9px] text-slate-400 block tracking-tight">7人均分</span>
+                                <div class="flex items-center gap-6">
+                                    <div class="flex flex-col space-y-1 items-end">
+                                        <div class="flex items-baseline gap-1">
+                                            <strong class="text-indigo-950 font-black text-sm">$4,100</strong>
+                                            <span class="text-[9px] text-rose-500 font-bold">7人分</span>
+                                        </div>
+                                        <div class="flex items-baseline gap-1">
+                                            <strong class="text-indigo-950 font-black text-sm">$2,600</strong>
+                                            <span class="text-[9px] text-rose-500 font-bold">6人分</span>
+                                        </div>
                                     </div>
-                                    <div>
-                                        <strong class="text-slate-800 block text-sm">$2,600</strong>
-                                        <span class="text-[9px] text-slate-400 block tracking-tight">6人均分</span>
-                                    </div>
+                                    <i class="fa-solid fa-chevron-down text-[10px] text-slate-300 group-open:rotate-180 transition-transform px-2"></i>
                                 </div>
                             </summary>
-                            <div
-                                class="px-9 pb-3 pt-1 bg-slate-50/50 text-xs text-slate-600 space-y-1.5 border-t border-slate-100">
-                                <div class="font-bold text-slate-700 mb-1 border-b border-slate-200 pb-1">清邁段 (7人)</div>
-                                <div class="flex justify-between"><span>10H包車</span><span>$4,000</span></div>
-                                <div class="flex justify-between"><span>司機小費</span><span>$100</span></div>
-                                <div class="font-bold text-slate-700 mt-2 mb-1 border-b border-slate-200 pb-1">曼谷段 (6人)
+                            <div class="pl-16 pr-5 pb-4 space-y-3 text-xs text-slate-500 border-t border-slate-50 mt-1 pt-3">
+                                <div>
+                                    <span class="text-[10px] font-bold text-emerald-700 block mb-1">清邁段 (7人預算)</span>
+                                    <div class="flex justify-between pl-2"><span>10H 包車</span><span class="font-mono">$4,000</span></div>
+                                    <div class="flex justify-between pl-2"><span>司機小費</span><span class="font-mono">$100</span></div>
                                 </div>
-                                <div class="flex justify-between"><span>機場單程接駁</span><span>$2,500</span></div>
-                                <div class="flex justify-between"><span>舉牌費</span><span>$100</span></div>
+                                <div>
+                                    <span class="text-[10px] font-bold text-emerald-700 block mb-1 border-t border-slate-50 pt-2">曼谷段 (6人預算)</span>
+                                    <div class="flex justify-between pl-2"><span>機場單程接駁</span><span class="font-mono">$2,500</span></div>
+                                    <div class="flex justify-between pl-2"><span>接機舉牌費</span><span class="font-mono">$100</span></div>
+                                </div>
                             </div>
                         </details>
 
                         <!-- Day 9 -->
-                        <details class="charter-details group border-b border-slate-100 last:border-0">
-                            <summary
-                                class="flex justify-between items-center p-3 cursor-pointer hover:bg-slate-50 transition-colors list-none [&::-webkit-details-marker]:hidden">
-                                <div class="flex items-center">
-                                    <i
-                                        class="fa-solid fa-chevron-down text-slate-300 mr-3 text-xs group-open:rotate-180 transition-transform"></i>
-                                    <span class="text-highlight-amber">Day 9 曼谷半日 <span
-                                            class="text-[10px] font-normal text-slate-400 ml-1">往返機場</span></span>
+                        <details class="charter-details group">
+                            <summary class="flex justify-between items-center py-4 cursor-pointer hover:bg-slate-50/50 transition-all list-none group">
+                                <div class="flex items-center gap-3">
+                                    <span class="w-12 text-center text-[10px] font-black bg-emerald-50 text-emerald-700 py-1 rounded">D9</span>
+                                    <div class="flex flex-col">
+                                        <span class="text-sm font-bold text-slate-700 group-hover:text-indigo-900 transition-colors">曼谷最終巡禮</span>
+                                        <span class="text-[10px] text-slate-400 font-medium">市區觀光 ➔ BKK送機</span>
+                                    </div>
                                 </div>
-                                <div class="text-right">
-                                    <strong class="text-slate-800 block">$4,500</strong>
-                                    <span class="text-[10px] text-slate-400 block tracking-tight">6人均分</span>
+                                <div class="flex items-center gap-4">
+                                    <div class="text-right">
+                                        <strong class="text-indigo-950 font-black text-base">$4,600</strong>
+                                        <span class="text-[9px] text-rose-500 font-bold block">6人均分</span>
+                                    </div>
+                                    <i class="fa-solid fa-chevron-down text-[10px] text-slate-300 group-open:rotate-180 transition-transform px-2"></i>
                                 </div>
                             </summary>
-                            <div
-                                class="px-9 pb-3 pt-1 bg-slate-50/50 text-xs text-slate-600 space-y-1.5 border-t border-slate-100">
-                                <div class="flex justify-between"><span>10H包車 (含送機)</span><span>$4,500</span></div>
-                                <div class="flex justify-between"><span>司機小費</span><span>$100</span></div>
+                            <div class="pl-16 pr-5 pb-4 space-y-2 text-xs text-slate-500">
+                                <div class="flex justify-between"><span>10H 包車 (含送機)</span><span class="font-mono">$4,500</span></div>
+                                <div class="flex justify-between"><span>司機服務小費</span><span class="font-mono">$100</span></div>
                             </div>
                         </details>
                     </div>
                 </div>
-
             </div>
         </div>
 
         <!-- 🎟️ 門票與特殊體驗 -->
-        <div class="bg-white rounded-2xl shadow-sm border border-slate-100 overflow-hidden h-full flex flex-col">
-            <div class="bg-amber-50 px-6 py-4 border-b border-amber-100 flex items-center">
-                <i class="fa-solid fa-ticket text-amber-600 text-xl mr-3"></i>
-                <h2 class="text-xl font-bold text-slate-800">🎟️ 精彩行程：核心景點門票與沉浸式體驗</h2>
+        <div class="bg-white rounded-3xl shadow-sm border border-slate-100 overflow-hidden h-full flex flex-col">
+            <div class="px-6 py-5 border-b border-slate-50 flex items-center bg-white">
+                <div class="bg-amber-100/50 w-10 h-10 rounded-full flex items-center justify-center mr-3">
+                    <i class="fa-solid fa-ticket text-amber-600"></i>
+                </div>
+                <h2 class="text-xl font-black text-indigo-950 tracking-tight">精彩行程<span class="ml-2 text-sm font-medium text-slate-400">核心景點門票與沉浸式體驗</span></h2>
             </div>
-            <div class="p-5 md:p-6 text-slate-700 flex-1 bg-slate-50/30 flex flex-col justify-start">
-
+            <div class="p-6 bg-white space-y-8 text-sm">
+                
                 <!-- 核心活動 (天燈節) -->
-                <div class="mb-6">
-                    <div
-                        class="bg-amber-100/70 border border-amber-200 rounded-xl p-4 flex items-center justify-between shadow-sm hover:shadow transition-shadow">
-                        <div class="flex items-center">
-                            <div
-                                class="bg-white w-10 h-10 rounded-full flex items-center justify-center shadow-sm mr-3 shrink-0">
-                                <i class="fa-solid fa-fire-flame-simple text-amber-500 text-lg"></i>
+                <div>
+                    <div class="relative group">
+                        <div class="absolute -inset-1 bg-gradient-to-r from-amber-200 to-yellow-500 rounded-2xl blur opacity-20 group-hover:opacity-40 transition duration-500"></div>
+                        <div class="relative bg-amber-50 border border-amber-200 rounded-2xl p-5 flex items-center justify-between">
+                            <div class="flex items-center gap-4">
+                                <div class="bg-white p-2.5 rounded-xl shadow-sm"><i class="fa-solid fa-fire-flame-simple text-amber-500 text-lg"></i></div>
+                                <div>
+                                    <span class="block text-[10px] font-black text-amber-700 uppercase tracking-widest mb-0.5">Highlight of Chiang Mai</span>
+                                    <h4 class="font-black text-indigo-950 text-base md:text-lg">CAD 萬人天燈節盛典</h4>
+                                    <span class="text-[10px] font-bold text-white bg-amber-600 px-2 py-0.5 rounded shadow-sm">Elite 席位</span>
+                                </div>
                             </div>
-                            <div>
-                                <span class="text-highlight-amber">清邁夢幻亮點</span>
-                                <span class="text-highlight-amber">CAD 萬人天燈節盛典 <span
-                                        class="text-xs font-normal bg-amber-200 text-amber-800 px-1 rounded ml-1">Elite 席位</span></span>
+                            <div class="text-right">
+                                <strong class="text-amber-700 text-2xl font-black">約 $16,000</strong>
+                                <span class="block text-[9px] text-amber-600/60 font-bold">年度唯一限定</span>
                             </div>
                         </div>
-                        <strong class="text-amber-700 text-base md:text-lg">約 $16,000</strong>
                     </div>
                 </div>
 
-                <!-- 清邁區 -->
-                <h3
-                    class="font-bold text-amber-800 mb-3 flex items-center bg-amber-100/50 px-3 py-1.5 rounded-lg w-max">
-                    <i class="fa-solid fa-elephant mr-2 text-amber-600 text-sm"></i> 清邁區
-                </h3>
-                <div class="bg-white rounded-xl border border-slate-200 overflow-hidden text-sm mb-6">
-                    <!-- Uncle Pong -->
-                    <div
-                        class="flex justify-between items-center p-3 border-b border-slate-100 hover:bg-slate-50 transition-colors">
-                        <div class="flex items-center"><i
-                                class="fa-solid fa-paw text-amber-500 w-5 text-center mr-2"></i>
-                            <span class="font-medium text-slate-700">Uncle Pong 迷你動物園門票</span>
+                <!-- 景點細項 (按地點分類) -->
+                <div class="space-y-8">
+                    <!-- Pattaya 芭達亞區 -->
+                    <div>
+                        <h3 class="text-[11px] font-black text-slate-400 uppercase tracking-[0.2em] mb-4 flex items-center">
+                            <span class="w-8 h-[1px] bg-slate-200 mr-2"></span>Pattaya 芭達亞核心區
+                        </h3>
+                        <div class="divide-y divide-slate-50 bg-slate-50/50 rounded-2xl border border-slate-100 overflow-hidden">
+                            <div class="flex justify-between items-center p-4 hover:bg-white transition-colors">
+                                <div class="flex flex-col">
+                                    <span class="font-bold text-slate-700">真理聖殿門票</span>
+                                    <span class="text-[10px] text-slate-400 font-medium italic">KKday / Klook 預訂</span>
+                                </div>
+                                <strong class="text-indigo-950 font-black text-base">$450</strong>
+                            </div>
+                            <div class="flex justify-between items-center p-4 hover:bg-white transition-colors">
+                                <div class="flex flex-col">
+                                    <span class="font-bold text-slate-700">6996 成人秀</span>
+                                    <span class="text-[10px] text-slate-400 font-medium italic">KKday 預訂</span>
+                                </div>
+                                <strong class="text-indigo-950 font-black text-base">$890</strong>
+                            </div>
                         </div>
-                        <strong class="text-slate-800 text-right">$200</strong>
+                    </div>
+
+                    <!-- Ayutthaya 大城區 -->
+                    <div>
+                        <h3 class="text-[11px] font-black text-slate-400 uppercase tracking-[0.2em] mb-4 flex items-center">
+                            <span class="w-8 h-[1px] bg-slate-200 mr-2"></span>Ayutthaya 大城核心區域
+                        </h3>
+                        <div class="divide-y divide-slate-50 bg-slate-50/50 rounded-2xl border border-slate-100 overflow-hidden">
+                            <div class="flex justify-between items-center p-4 hover:bg-white transition-colors">
+                                <div class="flex flex-col">
+                                    <span class="font-bold text-slate-700">獅子王野生動物園 (一般)</span>
+                                    <span class="text-[10px] text-slate-400 font-medium italic">KKday 預訂</span>
+                                </div>
+                                <strong class="text-indigo-950 font-black text-base">$280</strong>
+                            </div>
+                            <div class="flex justify-between items-center p-4 hover:bg-white transition-colors">
+                                <div class="flex flex-col">
+                                    <span class="font-bold text-slate-700">獅子王野生動物園 (長頸鹿套票)</span>
+                                    <span class="text-[10px] text-slate-400 font-medium italic italic">曼谷幫代訂</span>
+                                </div>
+                                <strong class="text-indigo-950 font-black text-base">$1,280</strong>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Bangkok 曼谷區 -->
+                    <div>
+                        <h3 class="text-[11px] font-black text-slate-400 uppercase tracking-[0.2em] mb-4 flex items-center">
+                            <span class="w-8 h-[1px] bg-slate-200 mr-2"></span>Bangkok 曼谷區域
+                        </h3>
+                        <div class="divide-y divide-slate-50 bg-slate-50/50 rounded-2xl border border-slate-100 overflow-hidden">
+                            <div class="flex justify-between items-center p-4 hover:bg-white transition-colors">
+                                <div class="flex flex-col">
+                                    <span class="font-bold text-slate-700">鄭王廟泰服大片體驗</span>
+                                    <span class="text-[10px] text-slate-400 font-medium">含專業妝髮攝影</span>
+                                </div>
+                                <strong class="text-indigo-950 font-black text-base">$2,900</strong>
+                            </div>
+                            <div class="flex justify-between items-center p-4 hover:bg-white transition-colors">
+                                <span class="font-bold text-slate-700">鄭王廟門票</span>
+                                <strong class="text-indigo-950 font-black text-base">$200</strong>
+                            </div>
+                            <div class="flex justify-between items-center p-4 hover:bg-white transition-colors">
+                                <span class="font-bold text-slate-700">臥佛寺門票</span>
+                                <strong class="text-indigo-950 font-black text-base">$300</strong>
+                            </div>
+                            <div class="flex justify-between items-center p-4 hover:bg-white transition-colors">
+                                <div class="flex flex-col">
+                                    <span class="font-bold text-slate-700">象神博物館</span>
+                                    <span class="text-[10px] text-slate-400 font-medium italic">KKday / Klook 預訂</span>
+                                </div>
+                                <strong class="text-indigo-950 font-black text-base">$260</strong>
+                            </div>
+                            <div class="flex justify-between items-center p-4 hover:bg-white transition-colors">
+                                <span class="font-bold text-slate-700">丹能莎朵水上市場手搖船</span>
+                                <div class="text-right">
+                                    <strong class="text-indigo-950 font-black text-base">$500-$800</strong>
+                                    <span class="text-[10px] text-slate-400 font-medium block italic">每船計價 (4-6人)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Chiang Mai 清邁區 -->
+                    <div>
+                        <h3 class="text-[11px] font-black text-slate-400 uppercase tracking-[0.2em] mb-4 flex items-center">
+                            <span class="w-8 h-[1px] bg-slate-200 mr-2"></span>Chiang Mai 清邁體驗
+                        </h3>
+                        <div class="divide-y divide-slate-50 bg-slate-50/50 rounded-2xl border border-slate-100 overflow-hidden">
+                            <div class="flex justify-between items-center p-4 hover:bg-white transition-colors">
+                                <span class="font-bold text-slate-700">Uncle Pong 迷你動物園</span>
+                                <strong class="text-indigo-950 font-black text-base">$200</strong>
+                            </div>
+                        </div>
                     </div>
                 </div>
-
-                <!-- 芭達亞區 -->
-                <h3
-                    class="font-bold text-amber-800 mb-3 flex items-center bg-amber-100/50 px-3 py-1.5 rounded-lg w-max">
-                    <i class="fa-solid fa-umbrella-beach mr-2 text-amber-600 text-sm"></i> 芭達亞區
-                </h3>
-                <div class="bg-white rounded-xl border border-slate-200 overflow-hidden text-sm mb-6">
-                    <!-- 真理聖殿 -->
-                    <div
-                        class="flex justify-between items-center p-3 border-b border-slate-100 hover:bg-slate-50 transition-colors">
-                        <div class="flex items-center"><i
-                                class="fa-solid fa-vihara text-amber-500 w-5 text-center mr-2"></i>
-                            <div class="flex flex-col">
-                                <span class="font-medium text-slate-700">真理聖殿</span>
-                                <span class="text-[10px] text-slate-400">經由 KKday/Klook 預訂</span>
-                            </div>
-                        </div>
-                        <strong class="text-slate-800 text-right">約 $450</strong>
-                    </div>
-                    <!-- 6996 -->
-                    <div
-                        class="flex justify-between items-center p-3 border-b border-slate-100 hover:bg-slate-50 transition-colors">
-                        <div class="flex items-center"><i
-                                class="fa-solid fa-masks-theater text-indigo-400 w-5 text-center mr-2"></i>
-                            <div class="flex flex-col">
-                                <span class="font-medium text-slate-700">6996 成人秀</span>
-                                <span class="text-[10px] text-slate-400">經由 KKday 預訂</span>
-                            </div>
-                        </div>
-                        <strong class="text-slate-800 text-right">約 $890</strong>
-                    </div>
-                </div>
-
-                <!-- 曼谷與大城門票 -->
-                <h3
-                    class="font-bold text-amber-800 mb-3 flex items-center bg-amber-100/50 px-3 py-1.5 rounded-lg w-max">
-                    <i class="fa-solid fa-city mr-2 text-amber-600 text-sm"></i> 曼谷與大城區
-                </h3>
-                <div class="bg-white rounded-xl border border-slate-200 overflow-hidden text-sm">
-                    <!-- 動物園 一般 -->
-                    <div
-                        class="flex justify-between items-center p-3 border-b border-slate-100 hover:bg-slate-50 transition-colors">
-                        <div class="flex items-center"><i
-                                class="fa-solid fa-paw text-emerald-500 w-5 text-center mr-2"></i>
-                            <div class="flex flex-col">
-                                <span class="font-medium text-slate-700">獅子王野生動物園 一般</span>
-                                <span class="text-[10px] text-slate-400">經由 KKday 預訂</span>
-                            </div>
-                        </div>
-                        <strong class="text-slate-800 text-right">約 $280</strong>
-                    </div>
-                    <!-- 動物園 套票 -->
-                    <div
-                        class="flex justify-between items-center p-3 border-b border-slate-100 hover:bg-slate-50 transition-colors">
-                        <div class="flex items-center"><i
-                                class="fa-solid fa-star text-amber-400 w-5 text-center mr-2"></i>
-                            <div class="flex flex-col">
-                                <span class="font-medium text-slate-700">獅子王野生動物園 套票</span>
-                                <span class="text-[10px] text-slate-400">由曼谷幫代訂</span>
-
-                            </div>
-                        </div>
-                        <strong class="text-slate-800 text-right">約 $1,280</strong>
-                    </div>
-                    <!-- 大城古蹟 -->
-                    <div
-                        class="flex justify-between items-center p-3 border-b border-slate-100 hover:bg-slate-50 transition-colors">
-                        <div class="flex items-center"><i
-                                class="fa-brands fa-fort-awesome text-amber-500 w-5 text-center mr-2"></i>
-                            <span class="font-medium text-slate-700">大城古蹟門票</span>
-                        </div>
-                        <strong class="text-slate-800 text-right">約 $100</strong>
-                    </div>
-                    <!-- 象神 -->
-                    <div
-                        class="flex justify-between items-center p-3 border-b border-slate-100 hover:bg-slate-50 transition-colors">
-                        <div class="flex items-center"><i
-                                class="fa-solid fa-om text-amber-600 w-5 text-center mr-2"></i>
-                            <div class="flex flex-col">
-                                <span class="font-medium text-slate-700">象神博物館</span>
-                                <span class="text-[10px] text-slate-400">經由 KKday/Klook 預訂</span>
-                            </div>
-                        </div>
-                        <strong class="text-slate-800 text-right">約 $260</strong>
-                    </div>
-                    <!-- 臥佛寺門票 (新增) -->
-                    <div
-                        class="flex justify-between items-center p-3 border-b border-slate-100 hover:bg-slate-50 transition-colors">
-                        <div class="flex items-center"><i
-                                class="fa-solid fa-vihara text-amber-600 w-5 text-center mr-2"></i>
-                            <span class="font-medium text-slate-700">臥佛寺門票</span>
-                        </div>
-                        <strong class="text-slate-800 text-right">約 $300</strong>
-                    </div>
-                    <!-- 泰服 -->
-                    <div
-                        class="flex justify-between items-center p-3 border-b border-slate-100 hover:bg-slate-50 transition-colors">
-                        <div class="flex items-center"><i
-                                class="fa-solid fa-camera-retro text-indigo-400 w-5 text-center mr-2"></i>
-                            <span class="font-medium text-slate-700">鄭王廟泰服大片</span>
-                        </div>
-                        <div class="text-right">
-                            <strong class="text-slate-800 block">約 $2,900</strong>
-                            <span class="text-[10px] text-slate-400 block tracking-tight">含服裝/妝髮/攝影</span>
-                        </div>
-                    </div>
-                    <!-- 鄭王廟門票 -->
-                    <div
-                        class="flex justify-between items-center p-3 border-b border-slate-100 hover:bg-slate-50 transition-colors">
-                        <div class="flex items-center"><i
-                                class="fa-brands fa-fort-awesome text-amber-500 w-5 text-center mr-2"></i>
-                            <span class="font-medium text-slate-700">鄭王廟門票</span>
-                        </div>
-                        <strong class="text-slate-800 text-right">約 $200</strong>
-                    </div>
-                    <!-- 水上市場 -->
-                    <div
-                        class="flex justify-between items-center p-3 border-b border-slate-100 hover:bg-slate-50 transition-colors">
-                        <div class="flex items-center"><i
-                                class="fa-solid fa-sailboat text-indigo-400 w-5 text-center mr-2"></i>
-                            <span class="font-medium text-slate-700">水上市場手搖船</span>
-                        </div>
-                        <div class="text-right">
-                            <strong class="text-slate-800 block">約 $500-$800</strong>
-                            <span class="text-[10px] text-slate-400 block tracking-tight">每船計價 (4-6人)</span>
-                        </div>
-                    </div>
-
-                </div>
-
             </div>
-
         </div>
     </div>
+    </div>
+
     </div>
 </body>
 
