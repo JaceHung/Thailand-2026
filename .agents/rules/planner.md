@@ -28,13 +28,18 @@ trigger: always_on
     - 不再強制統一為驚嘆號，應選用與內容情境相關的圖示。
     - 例如：門票相關 (`fa-ticket`)、服裝規定 (`fa-shirt`)、預訂提醒 (`fa-calendar-check`)、嚴格禁止 (`fa-camera-slash` / `fa-phone-slash`)。
 
-### 4. Google Maps 地圖聯動規範
+### 4. Google Maps 地圖聯動與樣式規範
 - **連結格式**：統一使用搜尋 API：`https://www.google.com/maps/search/?api=1&query=地點名稱+城市`
 - **圖示規範**：`fa-location-dot` 連結置於地點名稱右側。若後方已有連結圖示，名稱內禁止出現 Emoji。
+- **色彩統一**：超連結 (`<a>`) 的 CSS 類別應嚴格跟隨該項目的主題色（如主線行程統一使用 `text-amber-500 hover:text-amber-700 transition-colors` 樣式），以維持視覺整體性。
 
-### 4. 視覺與配色限制
+### 5. 視覺與配色限制
 - 統一採用專案定義的 **天燈琥珀金 (Amber)** 主題。
 - 所有行程備註盒 (`note-box`) 必須維持統一底色與邊框色，**禁止**針對單一區塊使用 Rose (紅) 或 Emerald (綠) 等 ad-hoc 背景色。
+
+### 6. 文案與排版細節 (Typography & Copywriting)
+- **句號省略原則**：為求列點文案簡潔俐落，內文若最後是以全形句號 (`。`) 結束，請一律刪除該句號。
+- **統一 Highlight 樣式**：文案內的重點文字（如景點名稱、特殊食物、數字等）嚴禁隨意混用純粗黑體或其他顏色。一律使用該項目區塊的 **主題色粗體** 作為 Highlight 標註（例如主線行程統一使用 `<strong class="text-amber-600">重點文字</strong>`），確保閱讀體驗一致。
 
 ---
 *本準則由 senior 規劃師 (Antigravity) 維護，嚴格遵守以確保網頁品質致。*

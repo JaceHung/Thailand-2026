@@ -98,6 +98,10 @@ body {
     color: var(--color-amber-gold); font-size: 0.8em; top: 0.25rem; 
 }
 
+/* 分流色系子彈點適配 */
+.timeline-item-rose .bullet-list li::before { color: #f43f5e; }
+.timeline-item-emerald .bullet-list li::before { color: #10b981; }
+
 /* ⚠️ 最終版「天燈金．質感邊框箱」備註樣式 */
 .note-box {
     background-color: var(--color-amber-bg);    /* bg-amber-50 */
@@ -128,3 +132,23 @@ body {
 
 /* 費用手風琴無標記 */
 details summary::-webkit-details-marker { display: none; }
+
+/* ==========================================================================
+   全域 UI 統一工具類別 (依據 planner.md 規範)
+   ========================================================================== */
+
+/* Google Maps 連結共通樣式 */
+.map-link-amber { color: var(--color-amber-gold); transition: color 0.2s ease-in-out; }
+.map-link-amber:hover { color: #b45309; /* amber-700 */ }
+
+.map-link-rose { color: #f43f5e; transition: color 0.2s ease-in-out; }
+.map-link-rose:hover { color: #be123c; /* rose-700 */ }
+
+.map-link-emerald { color: var(--color-emerald-success); transition: color 0.2s ease-in-out; }
+.map-link-emerald:hover { color: #047857; /* emerald-700 */ }
+
+/* 重點文字 Highlight 共通樣式 */
+.text-highlight-amber { color: #d97706; /* amber-600 */ font-weight: 700; }
+.text-highlight-rose { color: #e11d48; /* rose-600 */ font-weight: 700; }
+.text-highlight-emerald { color: #059669; /* emerald-600 */ font-weight: 700; }
+.text-highlight-black { color: #1e293b; /* slate-800 */ font-weight: 700; }
