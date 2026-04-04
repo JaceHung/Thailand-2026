@@ -122,3 +122,20 @@ document.addEventListener('DOMContentLoaded', () => {
     const defaultTab = window.location.hash.replace('#', '') || 'overview';
     switchMainTab(defaultTab);
 });
+
+// -----------------------------------------------
+// 私人備忘：隱藏入口邏輯
+// -----------------------------------------------
+const PRIVATE_PASSWORD = '0109';
+
+function handleLastUpdatedClick() {
+    const input = prompt('');
+    if (input === null) return; // 按取消，靜默
+    if (input === PRIVATE_PASSWORD) {
+        const privateTab = document.getElementById('tab-private');
+        if (privateTab) privateTab.classList.remove('hidden');
+        switchMainTab('private');
+    }
+    // 密碼錯誤：不做任何事，不給提示
+}
+window.handleLastUpdatedClick = handleLastUpdatedClick;
