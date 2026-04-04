@@ -6,21 +6,173 @@
 </head>
 <body>
 <div class="bg-white rounded-2xl shadow-sm p-6 md:p-8 border border-slate-100">
+    <!-- Header -->
     <div class="mb-8 border-b pb-6 border-slate-100">
         <div class="text-amber-600 font-bold text-base tracking-[0.2em] font-mono uppercase mb-2 flex items-center">
-            <span class="w-8 h-[2px] bg-amber-400 mr-3"></span>
-            Private Notes
+            <span class="w-8 h-[2px] bg-amber-400 mr-3 animate-pulse"></span>
+            Private Itinerary Notes
         </div>
         <h2 class="text-3xl font-black text-indigo-900 tracking-tight flex items-center">
             <i class="fa-solid fa-lock text-amber-500 mr-3 text-2xl"></i>
-            私人備忘錄
+            私人備忘錄：精選按摩計畫
         </h2>
     </div>
 
-    <div class="text-center py-20 text-slate-300">
-        <i class="fa-solid fa-pen-to-square text-5xl mb-4 block"></i>
-        <p class="text-lg font-medium">此頁面尚待規劃</p>
-        <p class="text-sm mt-1">您可以在此記錄私人行程或選項備忘</p>
+    <!-- Massage Plan Dashboard: Professional High-Density Style -->
+    <div class="bg-white rounded-2xl border border-slate-100 shadow-sm overflow-hidden mb-8">
+        <!-- Table Header (Hidden on Mobile) -->
+        <div class="hidden md:flex bg-slate-50/80 border-b border-slate-100 px-6 py-3 text-[11px] font-bold text-slate-400 uppercase tracking-widest">
+            <div class="w-20">Schedule</div>
+            <div class="w-72 px-4">Massage Shop</div>
+            <div class="flex-1 px-4">Massage Option (建議方案)</div>
+            <div class="w-24 text-right">Duration</div>
+        </div>
+
+        <div class="divide-y divide-slate-100">
+            <!-- Day 2 -->
+            <div class="flex flex-col md:flex-row md:items-center justify-between p-5 hover:bg-indigo-50/30 transition-all group">
+                <div class="flex items-center gap-4 w-full md:w-20 mb-3 md:mb-0">
+                    <span class="w-16 shrink-0 text-amber-600 font-mono font-black text-xs tracking-tighter bg-amber-50 px-2 py-1 rounded-md text-center border border-amber-200/30">DAY 2</span>
+                </div>
+                <div class="w-full md:w-72 md:px-4 mb-3 md:mb-0">
+                    <h4 class="font-black text-slate-800 text-base leading-none mb-1 group-hover:text-indigo-950 transition-colors">The One Massage</h4>
+                    <span class="text-[10px] text-slate-400 font-medium tracking-tight whitespace-nowrap uppercase">Pattaya / Central</span>
+                </div>
+                <div class="flex-1 md:px-4 pb-3 md:pb-0 border-b md:border-0 border-slate-50">
+                    <div class="flex items-center flex-wrap gap-2">
+                        <div class="text-indigo-900 font-bold text-lg leading-tight flex items-center">
+                            <i class="fa-solid fa-spa mr-2 opacity-80 text-sm text-amber-500"></i> Aroma Oil Massage
+                        </div>
+                        <span class="text-[10px] font-bold text-slate-500 border border-slate-200 px-1.5 rounded bg-slate-50 uppercase whitespace-nowrap">精油按摩</span>
+                    </div>
+                </div>
+                <div class="w-full md:w-24 flex items-center md:items-end justify-between md:justify-end pt-3 md:pt-0">
+                    <span class="md:hidden text-[10px] font-bold text-slate-400 uppercase tracking-widest">Duration</span>
+                    <div class="flex items-baseline gap-1">
+                        <strong class="text-indigo-950 text-2xl font-black">60</strong>
+                        <span class="text-[10px] text-slate-400 font-black uppercase tracking-widest">min</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Day 4 -->
+            <div class="flex flex-col md:flex-row md:items-center justify-between p-5 hover:bg-indigo-50/30 transition-all group">
+                <div class="flex items-center gap-4 w-full md:w-20 mb-3 md:mb-0">
+                    <span class="w-16 shrink-0 text-amber-600 font-mono font-black text-xs tracking-tighter bg-amber-50 px-2 py-1 rounded-md text-center border border-amber-200/30">DAY 4</span>
+                </div>
+                <div class="w-full md:w-72 md:px-4 mb-3 md:mb-0">
+                    <h4 class="font-black text-slate-800 text-base leading-none mb-1 group-hover:text-indigo-950 transition-colors">Wat Pho Massage</h4>
+                    <span class="text-[10px] text-slate-400 font-medium tracking-tight whitespace-nowrap uppercase">Bangkok / Old City</span>
+                </div>
+                <div class="flex-1 md:px-4 pb-3 md:pb-0 border-b md:border-0 border-slate-50">
+                    <div class="flex items-center flex-wrap gap-2">
+                        <div class="text-indigo-900 font-bold text-lg leading-tight flex items-center">
+                            <i class="fa-solid fa-shoe-prints mr-2 opacity-80 text-sm text-amber-500"></i> Foot Massage
+                        </div>
+                        <span class="text-[10px] font-bold text-slate-500 border border-slate-200 px-1.5 rounded bg-slate-50 uppercase whitespace-nowrap">正宗足部指壓</span>
+                    </div>
+                </div>
+                <div class="w-full md:w-24 flex items-center md:items-end justify-between md:justify-end pt-3 md:pt-0">
+                    <span class="md:hidden text-[10px] font-bold text-slate-400 uppercase tracking-widest">Duration</span>
+                    <div class="flex items-baseline gap-1">
+                        <strong class="text-indigo-950 text-2xl font-black">60</strong>
+                        <span class="text-[10px] text-slate-400 font-black uppercase tracking-widest">min</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Day 6 -->
+            <div class="flex flex-col md:flex-row md:items-center justify-between p-5 hover:bg-indigo-50/30 transition-all group">
+                <div class="flex items-center gap-4 w-full md:w-20 mb-3 md:mb-0">
+                    <span class="w-16 shrink-0 text-amber-600 font-mono font-black text-xs tracking-tighter bg-amber-50 px-2 py-1 rounded-md text-center border border-amber-200/30">DAY 6</span>
+                </div>
+                <div class="w-full md:w-72 md:px-4 mb-3 md:mb-0">
+                    <h4 class="font-black text-slate-800 text-base leading-none mb-1 group-hover:text-indigo-950 transition-colors">Lavender Massage</h4>
+                    <span class="text-[10px] text-slate-400 font-medium tracking-tight whitespace-nowrap uppercase">Chiang Mai / City</span>
+                </div>
+                <div class="flex-1 md:px-4 pb-3 md:pb-0 border-b md:border-0 border-slate-50">
+                    <div class="flex items-center flex-wrap gap-2">
+                        <div class="text-indigo-900 font-bold text-lg leading-tight flex items-center">
+                            <i class="fa-solid fa-hammer mr-2 opacity-80 text-sm text-amber-500"></i> Tok Sen Massage
+                        </div>
+                        <span class="text-[10px] font-bold text-slate-500 border border-slate-200 px-1.5 rounded bg-slate-50 uppercase whitespace-nowrap">木槌按摩</span>
+                    </div>
+                </div>
+                <div class="w-full md:w-24 flex items-center md:items-end justify-between md:justify-end pt-3 md:pt-0">
+                    <span class="md:hidden text-[10px] font-bold text-slate-400 uppercase tracking-widest">Duration</span>
+                    <div class="flex items-baseline gap-1">
+                        <strong class="text-indigo-950 text-2xl font-black">120</strong>
+                        <span class="text-[10px] text-slate-400 font-black uppercase tracking-widest">min</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Day 7 -->
+            <div class="flex flex-col md:flex-row md:items-center justify-between p-5 hover:bg-indigo-50/30 transition-all group">
+                <div class="flex items-center gap-4 w-full md:w-20 mb-3 md:mb-0">
+                    <span class="w-16 shrink-0 text-amber-600 font-mono font-black text-xs tracking-tighter bg-amber-50 px-2 py-1 rounded-md text-center border border-amber-200/30">DAY 7</span>
+                </div>
+                <div class="w-full md:w-72 md:px-4 mb-3 md:mb-0">
+                    <h4 class="font-black text-slate-800 text-base leading-none mb-1 group-hover:text-indigo-950 transition-colors">Ziri Thai Massage</h4>
+                    <span class="text-[10px] text-slate-400 font-medium tracking-tight whitespace-nowrap uppercase">Chiang Mai / Local</span>
+                </div>
+                <div class="flex-1 md:px-4 pb-3 md:pb-0 border-b md:border-0 border-slate-50">
+                    <div class="flex flex-col gap-1.5">
+                        <div class="flex items-center flex-wrap gap-2">
+                            <div class="text-indigo-900 font-bold text-lg leading-tight flex items-center">
+                                <i class="fa-solid fa-leaf mr-2 opacity-80 text-sm text-amber-500"></i> Thai Massage with Balm
+                            </div>
+                            <span class="text-[10px] font-bold text-slate-500 border border-slate-200 px-1.5 rounded bg-slate-50 uppercase whitespace-nowrap">青草膏指壓</span>
+                        </div>
+                        <div class="flex items-center flex-wrap gap-2">
+                            <div class="text-indigo-900 font-bold text-lg leading-tight flex items-center">
+                                <i class="fa-solid fa-face-smile mr-2 opacity-80 text-sm text-amber-500"></i> Anti-Aging Facial Massage
+                            </div>
+                            <span class="text-[10px] font-bold text-slate-500 border border-slate-200 px-1.5 rounded bg-slate-50 uppercase whitespace-nowrap">臉部護理</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full md:w-24 flex items-center md:items-end justify-between md:justify-end pt-3 md:pt-0">
+                    <span class="md:hidden text-[10px] font-bold text-slate-400 uppercase tracking-widest">Duration</span>
+                    <div class="flex items-baseline gap-1">
+                        <strong class="text-indigo-950 text-2xl font-black">60</strong>
+                        <span class="text-[10px] text-slate-400 font-black uppercase tracking-widest">min</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Day 8 -->
+            <div class="flex flex-col md:flex-row md:items-center justify-between p-5 hover:bg-indigo-50/30 transition-all group">
+                <div class="flex items-center gap-4 w-full md:w-20 mb-3 md:mb-0">
+                    <span class="w-16 shrink-0 text-amber-600 font-mono font-black text-xs tracking-tighter bg-amber-50 px-2 py-1 rounded-md text-center border border-amber-200/30">DAY 8</span>
+                </div>
+                <div class="w-full md:w-72 md:px-4 mb-3 md:mb-0">
+                    <h4 class="font-black text-slate-800 text-base leading-none mb-1 group-hover:text-indigo-950 transition-colors">Sense Garden</h4>
+                    <span class="text-[10px] text-slate-400 font-medium tracking-tight whitespace-nowrap uppercase">Chiang Mai / Garden</span>
+                </div>
+                <div class="flex-1 md:px-4 pb-3 md:pb-0 border-b md:border-0 border-slate-50">
+                    <div class="flex items-center flex-wrap gap-2">
+                        <div class="text-indigo-900 font-bold text-lg leading-tight flex items-center">
+                            <i class="fa-solid fa-hot-tub-person mr-2 opacity-80 text-sm text-amber-500"></i> Steam + Deep Tissue Thai
+                        </div>
+                        <span class="text-[10px] font-bold text-slate-500 border border-slate-200 px-1.5 rounded bg-slate-50 uppercase whitespace-nowrap">蒸氣+深層指壓</span>
+                    </div>
+                </div>
+                <div class="w-full md:w-24 flex items-center md:items-end justify-between md:justify-end pt-3 md:pt-0">
+                    <span class="md:hidden text-[10px] font-bold text-slate-400 uppercase tracking-widest">Duration</span>
+                    <div class="flex items-baseline gap-1">
+                        <strong class="text-indigo-950 text-2xl font-black">90</strong>
+                        <span class="text-[10px] text-slate-400 font-black uppercase tracking-widest">min</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="p-4 bg-slate-50 rounded-xl border border-dashed border-slate-200">
+        <p class="text-xs text-slate-400 leading-relaxed italic">
+            💡 註：此為私人規劃備忘，建議按摩日期前利用空檔預約，以確保行程順暢。
+        </p>
     </div>
 </div>
 </body>
