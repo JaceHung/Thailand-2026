@@ -101,6 +101,7 @@ body {
 /* 分流色系子彈點適配 */
 .timeline-item-rose .bullet-list li::before { color: #f43f5e; }
 .timeline-item-emerald .bullet-list li::before { color: #10b981; }
+.timeline-item-transfer .bullet-list li::before { color: #94a3b8; }
 
 /* ⚠️ 最終版「天燈金．質感邊框箱」備註樣式 */
 .note-box {
