@@ -103,26 +103,40 @@ body {
 .timeline-item-emerald .bullet-list li::before { color: #10b981; }
 .timeline-item-transfer .bullet-list li::before { color: #94a3b8; }
 
-/* ⚠️ 最終版「天燈金．質感邊框箱」備註樣式 */
+/* ⚠️ 最終版「主題質感邊框箱」備註樣式 */
 .note-box {
-    background-color: var(--color-amber-bg);    /* bg-amber-50 */
-    border-left: 4px solid var(--color-amber-light); /* border-l-4 border-amber-400 */
-    padding: 0.75rem;                            /* p-3 */
-    border-top-right-radius: 0.5rem;             /* rounded-r-lg */
+    background-color: #fffbeb;                  /* 預設天燈金 bg-amber-50 */
+    border-left: 4px solid #fbbf24;              /* border-l-4 border-amber-400 */
+    padding: 0.75rem;
+    border-top-right-radius: 0.5rem;
     border-bottom-right-radius: 0.5rem;
-    margin-top: 0.75rem;                         /* mt-3 */
-    font-size: 0.875rem;                         /* text-sm */
-    color: var(--color-text-main);               /* text-slate-700 */
+    margin-top: 0.75rem;
+    font-size: 0.875rem;
+    color: #334155;                             /* text-slate-700 */
     display: flex;
     align-items: flex-start;
-    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05); /* shadow-sm */
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
 }
 
 .note-box i {
-    color: var(--color-amber-gold);              /* text-amber-500 */
-    margin-right: 0.5rem;                        /* mr-2 */
-    margin-top: 0.125rem;                        /* mt-0.5 */
+    color: #f59e0b;                             /* 預設圖示金 text-amber-500 */
+    margin-right: 0.75rem;
+    margin-top: 0.125rem;
 }
+
+/* 🌿 綠色支線 (Emerald) 適配 */
+.note-box-emerald {
+    background-color: #f0fdf4 !important;        /* bg-emerald-50 */
+    border-left-color: #34d399 !important;       /* border-emerald-400 */
+}
+.note-box-emerald i { color: #10b981 !important; } /* text-emerald-500 */
+
+/* 🌹 玫瑰紅支線 (Rose) 適配 */
+.note-box-rose {
+    background-color: #fff1f2 !important;        /* bg-rose-50 */
+    border-left-color: #fb7185 !important;       /* border-rose-400 */
+}
+.note-box-rose i { color: #f43f5e !important; }  /* text-rose-500 */
 
 /* 首尾里程碑高亮樣式 (Day 1 & Day 9) */
 .milestone-highlight { 
